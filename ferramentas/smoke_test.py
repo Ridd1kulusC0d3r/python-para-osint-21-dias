@@ -156,7 +156,8 @@ def main():
                 falhas.append(f"{pasta.name}/{nome}: falhou\n{saida[-800:]}")
                 resultado = "❌ falhou"
             elif not args.offline and MARCA_OFFLINE in saida:
-                apis.append(f"{pasta.name}/{nome}")
+                motivo = next((l for l in saida.splitlines() if MARCA_OFFLINE in l), "")
+                apis.append(f"{pasta.name}/{nome} → {motivo.strip()[:300]}")
                 resultado = "🟡 caiu na amostra offline (API mudou ou bloqueou?)"
             else:
                 resultado = "✅ ok"
