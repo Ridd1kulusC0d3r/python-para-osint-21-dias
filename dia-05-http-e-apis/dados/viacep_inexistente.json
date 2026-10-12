@@ -1,0 +1,4 @@
+{
+  "_aviso": "AMOSTRA da resposta do ViaCEP para um CEP com formato válido mas inexistente (ex.: 99999-999). Versões antigas devolviam o booleano true; hoje costuma vir o texto \"true\". Amostra NÃO baixada ao vivo (montada à mão no formato da API).",
+  "erro": "true"
+}

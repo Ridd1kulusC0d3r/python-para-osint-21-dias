@@ -4,6 +4,7 @@
 basemap
 beautifulsoup4
 dnspython
+duckduckgo_search
 folium
 fpdf2
 matplotlib

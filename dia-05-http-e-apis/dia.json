@@ -1,0 +1,19 @@
+{
+  "dia": 5,
+  "slug": "dia-05-http-e-apis",
+  "titulo": "Requisições HTTP e APIs",
+  "titulo_original": "Day 5. Handling HTTP requests and working with APIs",
+  "capitulo": "O endereço da loja",
+  "pip_original": ["requests"],
+  "cartas": [
+    {"numero": 5, "nivel": 1, "rank": "D", "nome": "Jutsu do Primeiro Pedido", "efeito": "Faz um GET na API de busca do GitHub com requests e mostra a resposta JSON inteira.", "arquivo": "original/api_request.py"},
+    {"numero": 26, "nivel": 2, "rank": "B", "nome": "Jutsu do Mensageiro HTTP", "efeito": "GitHub, BrasilAPI e ViaCEP só com urllib: status, rate limit, campos aninhados, 404 e 429.", "arquivo": "br/01_github_stdlib.py"},
+    {"numero": 47, "nivel": 3, "rank": "S", "nome": "Carteiro Desconfiado", "efeito": "Confere uma lista de CEPs em duas APIs, com fonte reserva, e marca os inexistentes em CSV.", "arquivo": "desafio.md"}
+  ],
+  "quiz": [
+    {"pergunta": "O ViaCEP respondeu HTTP 200 com o corpo {\"erro\": \"true\"}. O que isso significa?", "opcoes": ["O servidor caiu", "O pedido funcionou, mas o CEP não existe", "Você precisa de uma chave de API", "O CEP existe, mas está sem logradouro"], "correta": 1, "explicacao": "O ViaCEP sinaliza CEP inexistente no corpo da resposta, não no status. Por isso é preciso ler o corpo, e não só o código HTTP."},
+    {"pergunta": "Qual código HTTP indica que você fez pedidos demais em pouco tempo?", "opcoes": ["200", "301", "404", "429"], "correta": 3, "explicacao": "429 Too Many Requests. O certo é esperar (de preferência o tempo do cabeçalho Retry-After) antes de tentar de novo."},
+    {"pergunta": "Para que serve o cabeçalho x-ratelimit-remaining que o GitHub devolve?", "opcoes": ["Mostra quantos pedidos ainda restam na janela atual", "Mostra quantos usuários existem no GitHub", "Indica a velocidade da sua internet", "Informa a senha temporária da API"], "correta": 0, "explicacao": "Os cabeçalhos x-ratelimit-* dizem o limite, quanto já foi usado, quanto resta e quando o contador zera (x-ratelimit-reset)."}
+  ],
+  "inovacao": {"titulo": "BrasilAPI: várias fontes públicas numa API só", "resumo": "Projeto aberto e gratuito que reúne CEP, CNPJ, bancos, feriados, DDD e mais. A rota de CEP v2 consulta vários provedores e diz qual respondeu (campo service)."}
+}

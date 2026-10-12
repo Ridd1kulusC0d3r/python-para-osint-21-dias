@@ -1,0 +1,19 @@
+{
+  "dia": 6,
+  "slug": "dia-06-json",
+  "titulo": "JSON",
+  "titulo_original": "Day 6. JSON",
+  "capitulo": "O CNPJ do rodapé",
+  "pip_original": ["requests"],
+  "cartas": [
+    {"numero": 6, "nivel": 1, "rank": "D", "nome": "Jutsu da Chave e do Índice", "efeito": "Lê um campo e depois a lista inteira de perfis que a API do GitHub devolve em JSON.", "arquivo": "original/read_list_of_fields.py"},
+    {"numero": 27, "nivel": 2, "rank": "B", "nome": "Jutsu do Mapa do JSON", "efeito": "Navega a ficha de CNPJ da BrasilAPI com .get, valida antes de consultar e salva a ficha do caso.", "arquivo": "br/01_cnpj_brasilapi.py"},
+    {"numero": 48, "nivel": 3, "rank": "S", "nome": "Fichário dos Números Falsos", "efeito": "Varre o caso atrás de CNPJs, valida o DV, consulta só os válidos e gera um fichário JSON.", "arquivo": "desafio.md"}
+  ],
+  "quiz": [
+    {"pergunta": "Por que usar dados.get('nome_fantasia', '—') em vez de dados['nome_fantasia']?", "opcoes": ["Porque .get é mais rápido", "Porque .get não quebra se o campo não existir", "Porque colchetes só funcionam com listas", "Porque .get converte o valor para texto"], "correta": 1, "explicacao": "Com colchetes, um campo ausente gera KeyError e o script para. O .get devolve o valor padrão e o script segue."},
+    {"pergunta": "O que faz ensure_ascii=False no json.dump?", "opcoes": ["Remove os acentos do texto", "Grava os acentos como estão ('Praça') em vez de códigos ('Pra\\u00e7a')", "Impede que o arquivo seja aberto no Windows", "Compacta o JSON numa linha só"], "correta": 1, "explicacao": "Por padrão o json escapa tudo que não é ASCII. Com ensure_ascii=False (e o arquivo aberto em utf-8), o texto fica legível."},
+    {"pergunta": "O CNPJ do rodapé falhou no dígito verificador. Qual é a atitude correta?", "opcoes": ["Ajustar os dois últimos dígitos e consultar a empresa resultante", "Consultar mesmo assim, várias vezes", "Registrar como pista (número inventado) e não gastar consulta", "Concluir que a loja é de outra cidade"], "correta": 2, "explicacao": "Um CNPJ com DV inválido não pertence a nenhuma empresa. 'Corrigir' o número pode apontar para uma empresa real e inocente."}
+  ],
+  "inovacao": {"titulo": "CNPJ alfanumérico a partir de julho/2026", "resumo": "A Receita passou a emitir CNPJs com letras nas 12 primeiras posições. O DV continua no módulo 11, com valor = ord(caractere) - 48. Validadores antigos quebram."}
+}

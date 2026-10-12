@@ -1,0 +1,30 @@
+{
+  "_aviso": "AMOSTRA ilustrativa no formato da API pública do Querido Diário (GET /gazettes). NÃO foi baixada ao vivo: os trechos (excerpts), as URLs e os números de edição são INVENTADOS para estudo e não correspondem a publicações reais do Diário Oficial do Município.",
+  "total_gazettes": 2,
+  "gazettes": [
+    {
+      "territory_id": "3106200",
+      "date": "2025-11-27",
+      "scraped_at": "2025-11-28T06:10:00.000000",
+      "url": "https://data.queridodiario.ok.org.br/3106200/2025-11-27/exemplo-amostra-1.pdf",
+      "territory_name": "Belo Horizonte",
+      "state_code": "MG",
+      "excerpts": ["(TRECHO FICTÍCIO) … campanha de orientação ao consumidor sobre compras pela internet na Black Friday, com alerta para lojas que aceitam somente PIX …"],
+      "edition": "0000",
+      "is_extra_edition": false,
+      "txt_url": "https://data.queridodiario.ok.org.br/3106200/2025-11-27/exemplo-amostra-1.txt"
+    },
+    {
+      "territory_id": "3106200",
+      "date": "2025-10-15",
+      "scraped_at": "2025-10-16T06:05:00.000000",
+      "url": "https://data.queridodiario.ok.org.br/3106200/2025-10-15/exemplo-amostra-2.pdf",
+      "territory_name": "Belo Horizonte",
+      "state_code": "MG",
+      "excerpts": ["(TRECHO FICTÍCIO) … pagamento de taxas municipais por PIX, mediante QR Code emitido exclusivamente pelos canais oficiais da Prefeitura …"],
+      "edition": "0000",
+      "is_extra_edition": false,
+      "txt_url": null
+    }
+  ]
+}

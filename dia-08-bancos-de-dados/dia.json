@@ -1,0 +1,19 @@
+{
+  "dia": 8,
+  "slug": "dia-08-bancos-de-dados",
+  "titulo": "Bancos de dados",
+  "titulo_original": "Day 8. Databases",
+  "capitulo": "O dump do painel",
+  "pip_original": [],
+  "cartas": [
+    {"numero": 8, "nivel": 1, "rank": "D", "nome": "Jutsu do Dump Convertido", "efeito": "Carrega um dump .sql no SQLite em memória e exporta cada tabela para CSV (reconstrução).", "arquivo": "original/nivel1_sql_para_csv.py"},
+    {"numero": 29, "nivel": 2, "rank": "B", "nome": "Jutsu do Arquivo Morto", "efeito": "Explora tabelas com sqlite_master, faz JOIN e GROUP BY nas contas laranja e consulta com '?'.", "arquivo": "br/02_quem_recebeu.py"},
+    {"numero": 50, "nivel": 3, "rank": "S", "nome": "Conciliação Implacável", "efeito": "Liga cada denúncia ao pedido do painel, aponta divergências e monta a linha do tempo dos laranjas.", "arquivo": "desafio.md"}
+  ],
+  "quiz": [
+    {"pergunta": "Para que serve a tabela especial sqlite_master?", "opcoes": ["Guarda as senhas do banco", "Lista as tabelas (e outros objetos) e o comando que criou cada uma", "Faz backup automático", "Mostra quem acessou o banco"], "correta": 1, "explicacao": "É o índice do banco SQLite. Consultar sqlite_master é o primeiro passo para conhecer um dump desconhecido."},
+    {"pergunta": "Por que usar banco.execute('... WHERE cidade = ?', (cidade,)) em vez de uma f-string?", "opcoes": ["Porque é mais curto", "Porque o '?' separa o dado do comando e impede SQL injection", "Porque f-string não funciona com SQLite", "Porque o '?' deixa a consulta mais rápida na internet"], "correta": 1, "explicacao": "Com '?', o valor nunca é interpretado como código SQL. Com f-string, uma entrada como x' OR '1'='1 muda o sentido do comando."},
+    {"pergunta": "Um colega encontrou, por um dork, um .sql exposto com e-mails e CPFs de clientes de uma loja real. O que fazer?", "opcoes": ["Baixar e guardar para usar depois", "Postar o link nas redes para alertar", "Não baixar nem abrir; registrar a URL e comunicar o responsável/autoridade pelos canais adequados", "Converter para CSV e compartilhar com a equipe"], "correta": 2, "explicacao": "Mexer em vazamento real expõe as vítimas e pode ser crime. O caminho é registrar, não manipular, e notificar quem pode corrigir."}
+  ],
+  "inovacao": {"titulo": "datasette: um painel web para qualquer SQLite", "resumo": "Ferramenta open source (pip install datasette) que abre um .db no navegador com busca, filtros e SQL. Ótima para a equipe explorar o caso.db sem programar."}
+}

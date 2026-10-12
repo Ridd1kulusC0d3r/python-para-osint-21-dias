@@ -1,0 +1,19 @@
+{
+  "dia": 9,
+  "slug": "dia-09-resultados-de-busca",
+  "titulo": "Automatizar a coleta de resultados de busca",
+  "titulo_original": "Day 9. Automate the collection of search results",
+  "capitulo": "Rastros na busca",
+  "pip_original": ["duckduckgo_search"],
+  "cartas": [
+    {"numero": 9, "nivel": 1, "rank": "D", "nome": "Jutsu do Pato Buscador", "efeito": "Busca no DuckDuckGo pelo Python e salva título, resumo e link em CSV (versão 2026 com ddgs).", "arquivo": "original/2026_ddg_search_to_csv.py"},
+    {"numero": 30, "nivel": 2, "rank": "B", "nome": "Jutsu do Diário Oficial", "efeito": "Busca termos nos Diários Oficiais pelo Querido Diário, salva em CSV e gera dorks clicáveis.", "arquivo": "br/01_querido_diario.py"},
+    {"numero": 51, "nivel": 3, "rank": "S", "nome": "Vigia do Diário", "efeito": "Consulta o Querido Diário, lembra o que já viu e mostra só as publicações novas em HTML.", "arquivo": "desafio.md"}
+  ],
+  "quiz": [
+    {"pergunta": "Por que o original ddg_search.py não roda mais em 2026?", "opcoes": ["O DuckDuckGo saiu do ar", "A função ddg() foi removida; hoje o pacote se chama ddgs e usa DDGS().text()", "O Python 3 não aceita mais from ... import", "Busca na internet passou a ser proibida"], "correta": 1, "explicacao": "O pacote mudou de interface (e de nome). Por isso o original fica intacto e a versão 2026 fica ao lado."},
+    {"pergunta": "O que a busca site:gov.br filetype:pdf intext:\"CNPJ\" pede ao buscador?", "opcoes": ["Sites que vendem PDFs de CNPJ", "PDFs hospedados em domínios gov.br que contenham a palavra CNPJ no texto", "O CNPJ do site gov.br", "Todos os PDFs da internet"], "correta": 1, "explicacao": "site: restringe o domínio, filetype: o tipo de arquivo e intext: exige o termo no conteúdo."},
+    {"pergunta": "Na resposta do Querido Diário, qual a diferença entre total_gazettes e len(gazettes)?", "opcoes": ["Nenhuma, são sempre iguais", "total_gazettes é quantos diários existem para a busca; gazettes traz só a página pedida (size)", "total_gazettes conta palavras", "gazettes inclui diários de outros municípios"], "correta": 1, "explicacao": "A API é paginada: para ver o resto, peça de novo com offset."}
+  ],
+  "inovacao": {"titulo": "Querido Diário: Diários Oficiais municipais pesquisáveis", "resumo": "Projeto aberto da Open Knowledge Brasil que raspa diários oficiais de municípios e oferece uma API gratuita de busca por termo, município (código IBGE) e período."}
+}

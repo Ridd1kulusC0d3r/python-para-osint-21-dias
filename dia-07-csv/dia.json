@@ -1,0 +1,19 @@
+{
+  "dia": 7,
+  "slug": "dia-07-csv",
+  "titulo": "CSV",
+  "titulo_original": "Day 7. CSV",
+  "capitulo": "A planilha das vítimas",
+  "pip_original": ["requests"],
+  "cartas": [
+    {"numero": 7, "nivel": 1, "rank": "D", "nome": "Jutsu do Ponto e Vírgula", "efeito": "Escreve, lê e converte JSON em CSV com o módulo csv, como o autor ensina.", "arquivo": "original/json_to_csv.py"},
+    {"numero": 28, "nivel": 2, "rank": "B", "nome": "Jutsu da Planilha Viva", "efeito": "DictReader com ';', soma com Decimal, municípios do IBGE em CSV e cidades padronizadas com difflib.", "arquivo": "br/01_ler_denuncias.py"},
+    {"numero": 49, "nivel": 3, "rank": "S", "nome": "Mapa das Mesorregiões", "efeito": "Resume vítimas e prejuízo por cidade e mesorregião em CSVs que o Excel brasileiro abre certo.", "arquivo": "desafio.md"}
+  ],
+  "quiz": [
+    {"pergunta": "Por que o original read_csv.py imprime ['Smith;John;35;USA'] numa lista de um item só?", "opcoes": ["Porque o arquivo está corrompido", "Porque o csv.reader espera vírgula por padrão e o arquivo usa ponto e vírgula", "Porque faltou o encoding utf-8", "Porque o CSV só aceita uma coluna"], "correta": 1, "explicacao": "Sem delimiter=';', o leitor separa por vírgula; como não há vírgula, a linha inteira vira um campo só."},
+    {"pergunta": "Qual codificação faz o Excel em português abrir um CSV UTF-8 com acentos corretos?", "opcoes": ["ascii", "latin-1", "utf-8-sig", "utf-16-be"], "correta": 2, "explicacao": "utf-8-sig grava a assinatura BOM no início do arquivo, que avisa o Excel de que o texto é UTF-8."},
+    {"pergunta": "O que difflib.get_close_matches('belo horizone', base, cutoff=0.85) faz?", "opcoes": ["Apaga as cidades erradas", "Devolve o nome da base mais parecido, se a semelhança for de pelo menos 85%", "Traduz o nome da cidade", "Conta quantas letras são iguais"], "correta": 1, "explicacao": "Ele compara textos e devolve os mais parecidos acima do corte. Ótimo para erros de digitação, mas sempre revise os casos aproximados."}
+  ],
+  "inovacao": {"titulo": "API de Localidades do IBGE", "resumo": "API oficial e gratuita com todos os municípios, códigos IBGE e regiões (antigas e novas). É a base para padronizar cidades e cruzar com outros dados públicos."}
+}

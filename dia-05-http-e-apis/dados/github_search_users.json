@@ -1,0 +1,39 @@
+{
+  "_aviso": "AMOSTRA ilustrativa no formato da API de busca de usuários do GitHub (GET /search/users). Logins e números são fictícios. Amostra NÃO baixada ao vivo (montada à mão no formato da API).",
+  "_status": 200,
+  "_cabecalhos": {
+    "x-ratelimit-limit": "10",
+    "x-ratelimit-remaining": "9",
+    "x-ratelimit-used": "1",
+    "x-ratelimit-reset": "1767225600",
+    "x-ratelimit-resource": "search"
+  },
+  "total_count": 3,
+  "incomplete_results": false,
+  "items": [
+    {
+      "login": "exemplo-usuario-01",
+      "id": 1001,
+      "html_url": "https://github.com/exemplo-usuario-01",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1001?v=4",
+      "type": "User",
+      "score": 1.0
+    },
+    {
+      "login": "exemplo-usuario-02",
+      "id": 1002,
+      "html_url": "https://github.com/exemplo-usuario-02",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1002?v=4",
+      "type": "User",
+      "score": 1.0
+    },
+    {
+      "login": "exemplo-organizacao",
+      "id": 1003,
+      "html_url": "https://github.com/exemplo-organizacao",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1003?v=4",
+      "type": "Organization",
+      "score": 1.0
+    }
+  ]
+}

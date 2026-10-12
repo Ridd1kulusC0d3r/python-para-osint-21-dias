@@ -1,0 +1,588 @@
+{
+ "_aviso": "AMOSTRA reduzida no formato da API de localidades do IBGE (GET /api/v1/localidades/estados/MG/municipios). A resposta real é uma LISTA com os 853 municípios de MG; aqui ela vem dentro do campo 'municipios' para caber o aviso. Os 'id' de micro/mesorregião e regiões imediatas/intermediárias foram zerados e os nomes de região imediata/intermediária são aproximados: use a API real para esses campos. Em 'Belo Oriente' o campo 'microrregiao' foi posto como null DE PROPÓSITO, para simular o que a API real faz com alguns municípios.",
+ "municipios": [
+  {
+   "id": 3106200,
+   "nome": "Belo Horizonte",
+   "microrregiao": {
+    "id": 0,
+    "nome": "Belo Horizonte",
+    "mesorregiao": {
+     "id": 0,
+     "nome": "Metropolitana de Belo Horizonte",
+     "UF": {
+      "id": 31,
+      "sigla": "MG",
+      "nome": "Minas Gerais",
+      "regiao": {
+       "id": 3,
+       "sigla": "SE",
+       "nome": "Sudeste"
+      }
+     }
+    }
+   },
+   "regiao-imediata": {
+    "id": 0,
+    "nome": "Belo Horizonte",
+    "regiao-intermediaria": {
+     "id": 0,
+     "nome": "Belo Horizonte",
+     "UF": {
+      "id": 31,
+      "sigla": "MG",
+      "nome": "Minas Gerais",
+      "regiao": {
+       "id": 3,
+       "sigla": "SE",
+       "nome": "Sudeste"
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": 3106309,
+   "nome": "Belo Oriente",
+   "microrregiao": null,
+   "regiao-imediata": {
+    "id": 0,
+    "nome": "Ipatinga",
+    "regiao-intermediaria": {
+     "id": 0,
+     "nome": "Ipatinga",
+     "UF": {
+      "id": 31,
+      "sigla": "MG",
+      "nome": "Minas Gerais",
+      "regiao": {
+       "id": 3,
+       "sigla": "SE",
+       "nome": "Sudeste"
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": 3106408,
+   "nome": "Belo Vale",
+   "microrregiao": {
+    "id": 0,
+    "nome": "Belo Horizonte",
+    "mesorregiao": {
+     "id": 0,
+     "nome": "Metropolitana de Belo Horizonte",
+     "UF": {
+      "id": 31,
+      "sigla": "MG",
+      "nome": "Minas Gerais",
+      "regiao": {
+       "id": 3,
+       "sigla": "SE",
+       "nome": "Sudeste"
+      }
+     }
+    }
+   },
+   "regiao-imediata": {
+    "id": 0,
+    "nome": "Belo Horizonte",
+    "regiao-intermediaria": {
+     "id": 0,
+     "nome": "Belo Horizonte",
+     "UF": {
+      "id": 31,
+      "sigla": "MG",
+      "nome": "Minas Gerais",
+      "regiao": {
+       "id": 3,
+       "sigla": "SE",
+       "nome": "Sudeste"
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": 3106705,
+   "nome": "Betim",
+   "microrregiao": {
+    "id": 0,
+    "nome": "Belo Horizonte",
+    "mesorregiao": {
+     "id": 0,
+     "nome": "Metropolitana de Belo Horizonte",
+     "UF": {
+      "id": 31,
+      "sigla": "MG",
+      "nome": "Minas Gerais",
+      "regiao": {
+       "id": 3,
+       "sigla": "SE",
+       "nome": "Sudeste"
+      }
+     }
+    }
+   },
+   "regiao-imediata": {
+    "id": 0,
+    "nome": "Belo Horizonte",
+    "regiao-intermediaria": {
+     "id": 0,
+     "nome": "Belo Horizonte",
+     "UF": {
+      "id": 31,
+      "sigla": "MG",
+      "nome": "Minas Gerais",
+      "regiao": {
+       "id": 3,
+       "sigla": "SE",
+       "nome": "Sudeste"
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": 3118601,
+   "nome": "Contagem",
+   "microrregiao": {
+    "id": 0,
+    "nome": "Belo Horizonte",
+    "mesorregiao": {
+     "id": 0,
+     "nome": "Metropolitana de Belo Horizonte",
+     "UF": {
+      "id": 31,
+      "sigla": "MG",
+      "nome": "Minas Gerais",
+      "regiao": {
+       "id": 3,
+       "sigla": "SE",
+       "nome": "Sudeste"
+      }
+     }
+    }
+   },
+   "regiao-imediata": {
+    "id": 0,
+    "nome": "Belo Horizonte",
+    "regiao-intermediaria": {
+     "id": 0,
+     "nome": "Belo Horizonte",
+     "UF": {
+      "id": 31,
+      "sigla": "MG",
+      "nome": "Minas Gerais",
+      "regiao": {
+       "id": 3,
+       "sigla": "SE",
+       "nome": "Sudeste"
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": 3122306,
+   "nome": "Divinópolis",
+   "microrregiao": {
+    "id": 0,
+    "nome": "Divinópolis",
+    "mesorregiao": {
+     "id": 0,
+     "nome": "Oeste de Minas",
+     "UF": {
+      "id": 31,
+      "sigla": "MG",
+      "nome": "Minas Gerais",
+      "regiao": {
+       "id": 3,
+       "sigla": "SE",
+       "nome": "Sudeste"
+      }
+     }
+    }
+   },
+   "regiao-imediata": {
+    "id": 0,
+    "nome": "Divinópolis",
+    "regiao-intermediaria": {
+     "id": 0,
+     "nome": "Divinópolis",
+     "UF": {
+      "id": 31,
+      "sigla": "MG",
+      "nome": "Minas Gerais",
+      "regiao": {
+       "id": 3,
+       "sigla": "SE",
+       "nome": "Sudeste"
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": 3127701,
+   "nome": "Governador Valadares",
+   "microrregiao": {
+    "id": 0,
+    "nome": "Governador Valadares",
+    "mesorregiao": {
+     "id": 0,
+     "nome": "Vale do Rio Doce",
+     "UF": {
+      "id": 31,
+      "sigla": "MG",
+      "nome": "Minas Gerais",
+      "regiao": {
+       "id": 3,
+       "sigla": "SE",
+       "nome": "Sudeste"
+      }
+     }
+    }
+   },
+   "regiao-imediata": {
+    "id": 0,
+    "nome": "Governador Valadares",
+    "regiao-intermediaria": {
+     "id": 0,
+     "nome": "Governador Valadares",
+     "UF": {
+      "id": 31,
+      "sigla": "MG",
+      "nome": "Minas Gerais",
+      "regiao": {
+       "id": 3,
+       "sigla": "SE",
+       "nome": "Sudeste"
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": 3131307,
+   "nome": "Ipatinga",
+   "microrregiao": {
+    "id": 0,
+    "nome": "Ipatinga",
+    "mesorregiao": {
+     "id": 0,
+     "nome": "Vale do Rio Doce",
+     "UF": {
+      "id": 31,
+      "sigla": "MG",
+      "nome": "Minas Gerais",
+      "regiao": {
+       "id": 3,
+       "sigla": "SE",
+       "nome": "Sudeste"
+      }
+     }
+    }
+   },
+   "regiao-imediata": {
+    "id": 0,
+    "nome": "Ipatinga",
+    "regiao-intermediaria": {
+     "id": 0,
+     "nome": "Ipatinga",
+     "UF": {
+      "id": 31,
+      "sigla": "MG",
+      "nome": "Minas Gerais",
+      "regiao": {
+       "id": 3,
+       "sigla": "SE",
+       "nome": "Sudeste"
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": 3136702,
+   "nome": "Juiz de Fora",
+   "microrregiao": {
+    "id": 0,
+    "nome": "Juiz de Fora",
+    "mesorregiao": {
+     "id": 0,
+     "nome": "Zona da Mata",
+     "UF": {
+      "id": 31,
+      "sigla": "MG",
+      "nome": "Minas Gerais",
+      "regiao": {
+       "id": 3,
+       "sigla": "SE",
+       "nome": "Sudeste"
+      }
+     }
+    }
+   },
+   "regiao-imediata": {
+    "id": 0,
+    "nome": "Juiz de Fora",
+    "regiao-intermediaria": {
+     "id": 0,
+     "nome": "Juiz de Fora",
+     "UF": {
+      "id": 31,
+      "sigla": "MG",
+      "nome": "Minas Gerais",
+      "regiao": {
+       "id": 3,
+       "sigla": "SE",
+       "nome": "Sudeste"
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": 3143302,
+   "nome": "Montes Claros",
+   "microrregiao": {
+    "id": 0,
+    "nome": "Montes Claros",
+    "mesorregiao": {
+     "id": 0,
+     "nome": "Norte de Minas",
+     "UF": {
+      "id": 31,
+      "sigla": "MG",
+      "nome": "Minas Gerais",
+      "regiao": {
+       "id": 3,
+       "sigla": "SE",
+       "nome": "Sudeste"
+      }
+     }
+    }
+   },
+   "regiao-imediata": {
+    "id": 0,
+    "nome": "Montes Claros",
+    "regiao-intermediaria": {
+     "id": 0,
+     "nome": "Montes Claros",
+     "UF": {
+      "id": 31,
+      "sigla": "MG",
+      "nome": "Minas Gerais",
+      "regiao": {
+       "id": 3,
+       "sigla": "SE",
+       "nome": "Sudeste"
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": 3151800,
+   "nome": "Poços de Caldas",
+   "microrregiao": {
+    "id": 0,
+    "nome": "Poços de Caldas",
+    "mesorregiao": {
+     "id": 0,
+     "nome": "Sul/Sudoeste de Minas",
+     "UF": {
+      "id": 31,
+      "sigla": "MG",
+      "nome": "Minas Gerais",
+      "regiao": {
+       "id": 3,
+       "sigla": "SE",
+       "nome": "Sudeste"
+      }
+     }
+    }
+   },
+   "regiao-imediata": {
+    "id": 0,
+    "nome": "Poços de Caldas",
+    "regiao-intermediaria": {
+     "id": 0,
+     "nome": "Poços de Caldas",
+     "UF": {
+      "id": 31,
+      "sigla": "MG",
+      "nome": "Minas Gerais",
+      "regiao": {
+       "id": 3,
+       "sigla": "SE",
+       "nome": "Sudeste"
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": 3154606,
+   "nome": "Ribeirão das Neves",
+   "microrregiao": {
+    "id": 0,
+    "nome": "Belo Horizonte",
+    "mesorregiao": {
+     "id": 0,
+     "nome": "Metropolitana de Belo Horizonte",
+     "UF": {
+      "id": 31,
+      "sigla": "MG",
+      "nome": "Minas Gerais",
+      "regiao": {
+       "id": 3,
+       "sigla": "SE",
+       "nome": "Sudeste"
+      }
+     }
+    }
+   },
+   "regiao-imediata": {
+    "id": 0,
+    "nome": "Belo Horizonte",
+    "regiao-intermediaria": {
+     "id": 0,
+     "nome": "Belo Horizonte",
+     "UF": {
+      "id": 31,
+      "sigla": "MG",
+      "nome": "Minas Gerais",
+      "regiao": {
+       "id": 3,
+       "sigla": "SE",
+       "nome": "Sudeste"
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": 3167202,
+   "nome": "Sete Lagoas",
+   "microrregiao": {
+    "id": 0,
+    "nome": "Sete Lagoas",
+    "mesorregiao": {
+     "id": 0,
+     "nome": "Metropolitana de Belo Horizonte",
+     "UF": {
+      "id": 31,
+      "sigla": "MG",
+      "nome": "Minas Gerais",
+      "regiao": {
+       "id": 3,
+       "sigla": "SE",
+       "nome": "Sudeste"
+      }
+     }
+    }
+   },
+   "regiao-imediata": {
+    "id": 0,
+    "nome": "Sete Lagoas",
+    "regiao-intermediaria": {
+     "id": 0,
+     "nome": "Sete Lagoas",
+     "UF": {
+      "id": 31,
+      "sigla": "MG",
+      "nome": "Minas Gerais",
+      "regiao": {
+       "id": 3,
+       "sigla": "SE",
+       "nome": "Sudeste"
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": 3170107,
+   "nome": "Uberaba",
+   "microrregiao": {
+    "id": 0,
+    "nome": "Uberaba",
+    "mesorregiao": {
+     "id": 0,
+     "nome": "Triângulo Mineiro/Alto Paranaíba",
+     "UF": {
+      "id": 31,
+      "sigla": "MG",
+      "nome": "Minas Gerais",
+      "regiao": {
+       "id": 3,
+       "sigla": "SE",
+       "nome": "Sudeste"
+      }
+     }
+    }
+   },
+   "regiao-imediata": {
+    "id": 0,
+    "nome": "Uberaba",
+    "regiao-intermediaria": {
+     "id": 0,
+     "nome": "Uberaba",
+     "UF": {
+      "id": 31,
+      "sigla": "MG",
+      "nome": "Minas Gerais",
+      "regiao": {
+       "id": 3,
+       "sigla": "SE",
+       "nome": "Sudeste"
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": 3170206,
+   "nome": "Uberlândia",
+   "microrregiao": {
+    "id": 0,
+    "nome": "Uberlândia",
+    "mesorregiao": {
+     "id": 0,
+     "nome": "Triângulo Mineiro/Alto Paranaíba",
+     "UF": {
+      "id": 31,
+      "sigla": "MG",
+      "nome": "Minas Gerais",
+      "regiao": {
+       "id": 3,
+       "sigla": "SE",
+       "nome": "Sudeste"
+      }
+     }
+    }
+   },
+   "regiao-imediata": {
+    "id": 0,
+    "nome": "Uberlândia",
+    "regiao-intermediaria": {
+     "id": 0,
+     "nome": "Uberlândia",
+     "UF": {
+      "id": 31,
+      "sigla": "MG",
+      "nome": "Minas Gerais",
+      "regiao": {
+       "id": 3,
+       "sigla": "SE",
+       "nome": "Sudeste"
+      }
+     }
+    }
+   }
+  }
+ ]
+}

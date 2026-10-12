@@ -1,0 +1,16 @@
+{
+  "_aviso": "AMOSTRA ilustrativa no formato do ViaCEP (GET /ws/{cep}/json/). NÃO foi baixada ao vivo: foi montada à mão com o logradouro que fontes públicas associam a este CEP (Praça Sete de Setembro). Confira rodando sem OSINT_OFFLINE; a resposta real pode diferir.",
+  "cep": "30130-010",
+  "logradouro": "Praça Sete de Setembro",
+  "complemento": "",
+  "unidade": "",
+  "bairro": "Centro",
+  "localidade": "Belo Horizonte",
+  "uf": "MG",
+  "estado": "Minas Gerais",
+  "regiao": "Sudeste",
+  "ibge": "3106200",
+  "gia": "",
+  "ddd": "31",
+  "siafi": "4123"
+}

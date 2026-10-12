@@ -1,0 +1,13 @@
+{
+  "_aviso": "AMOSTRA ilustrativa no formato da BrasilAPI CEP v2 (GET /api/cep/v2/{cep}). NÃO foi baixada ao vivo: foi montada à mão com o logradouro que fontes públicas associam a este CEP (Praça Sete de Setembro). Confira rodando sem OSINT_OFFLINE; a resposta real pode diferir.",
+  "cep": "30130010",
+  "state": "MG",
+  "city": "Belo Horizonte",
+  "neighborhood": "Centro",
+  "street": "Praça Sete de Setembro",
+  "service": "open-cep",
+  "location": {
+    "type": "Point",
+    "coordinates": {}
+  }
+}

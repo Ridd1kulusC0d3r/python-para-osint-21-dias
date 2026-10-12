@@ -1,0 +1,16 @@
+{
+  "_aviso": "AMOSTRA ilustrativa no formato do ViaCEP para 01001-000 (o CEP de exemplo da própria documentação do ViaCEP). Amostra NÃO baixada ao vivo (montada à mão no formato da API).",
+  "cep": "01001-000",
+  "logradouro": "Praça da Sé",
+  "complemento": "lado ímpar",
+  "unidade": "",
+  "bairro": "Sé",
+  "localidade": "São Paulo",
+  "uf": "SP",
+  "estado": "São Paulo",
+  "regiao": "Sudeste",
+  "ibge": "3550308",
+  "gia": "1004",
+  "ddd": "11",
+  "siafi": "7107"
+}
