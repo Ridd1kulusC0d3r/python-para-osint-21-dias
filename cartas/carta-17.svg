@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="420" viewBox="0 0 300 420" role="img" aria-label="Carta 17: Jutsu dos Três Papéis">
+  <style>
+    .t { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    .num { font: 700 15px 'Segoe UI', Roboto, Arial, sans-serif; fill: #f4f1e8; }
+    .rank { font: 900 44px Georgia, serif; fill: #3fa66b; text-anchor: middle; }
+    .nome { font: 700 20px 'Segoe UI', Roboto, Arial, sans-serif; fill: #f4f1e8; text-anchor: middle; }
+    .tema { font: 500 12px 'Segoe UI', Roboto, Arial, sans-serif; fill: #b9b3a3; text-anchor: middle; letter-spacing: .5px; }
+    .efeito { font: 400 13.5px 'Segoe UI', Roboto, Arial, sans-serif; fill: #e8e3d6; }
+    .rod { font: 600 10.5px 'Segoe UI', Roboto, Arial, sans-serif; fill: #9a9484; letter-spacing: 1px; }
+  </style>
+  <rect x="4" y="4" width="292" height="412" rx="18" fill="#17161a" stroke="#3fa66b" stroke-width="6"/>
+  <rect x="16" y="16" width="268" height="388" rx="12" fill="none" stroke="#3fa66b" stroke-opacity=".35" stroke-width="1.5"/>
+  <text x="30" y="44" class="num">Nº 17</text>
+  <text x="270" y="44" class="num" text-anchor="end">DIA 17</text>
+  <circle cx="150" cy="118" r="54" fill="#3fa66b" fill-opacity=".12" stroke="#3fa66b" stroke-width="2.5"/>
+  <text x="150" y="134" class="rank">C</text>
+  <text x="150" y="190" class="tema">GERANDO DOCUMENTOS</text>
+  <text x="150" y="214" class="nome">Jutsu dos Três Papéis</text>
+  <line x1="30" y1="266" x2="270" y2="266" stroke="#3fa66b" stroke-opacity=".5"/>
+  <text x="30" y="292" class="efeito">Gera planilha XLSX, documento DOCX</text><text x="30" y="311" class="efeito">e PDF com imagem usando</text><text x="30" y="330" class="efeito">XlsxWriter, python-docx e fpdf2.</text>
+  <text x="150" y="384" class="rod" text-anchor="middle">ARCO I · ORIGINAL · CIPHER387</text>
+  <text x="150" y="400" class="rod" text-anchor="middle">PYJUTSU · PYTHON PARA OSINT</text>
+</svg>

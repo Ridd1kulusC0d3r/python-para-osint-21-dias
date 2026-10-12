@@ -1,0 +1,11 @@
+{
+  "_aviso": "AMOSTRA ilustrativa no formato de https://httpbin.org/headers para um pedido com User-Agent e Accept-Language personalizados.",
+  "headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Encoding": "identity",
+    "Accept-Language": "pt-BR,pt;q=0.9",
+    "Host": "httpbin.org",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "X-Amzn-Trace-Id": "Root=1-00000000-000000000000000000000001"
+  }
+}

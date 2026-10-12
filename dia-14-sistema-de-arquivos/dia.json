@@ -1,0 +1,19 @@
+{
+  "dia": 14,
+  "slug": "dia-14-sistema-de-arquivos",
+  "titulo": "Trabalhando com o sistema de arquivos",
+  "titulo_original": "Day 14. Working with the file system",
+  "capitulo": "A sala de evidências",
+  "pip_original": [],
+  "cartas": [
+    {"numero": 14, "nivel": 1, "rank": "C", "nome": "Jutsu do Arquivista", "efeito": "Lista arquivos com glob, lê o conteúdo e acha os que contêm um texto ou um e-mail.", "arquivo": "original/check_re_files_contents.py"},
+    {"numero": 35, "nivel": 2, "rank": "A", "nome": "Jutsu da Sala de Evidências", "efeito": "Varre pastas com pathlib, acha PIX e e-mails em tudo e lacra cada arquivo com SHA-256.", "arquivo": "br/03_hash_custodia.py"},
+    {"numero": 56, "nivel": 3, "rank": "S", "nome": "Triagem do Pendrive", "efeito": "Desmascara extensões falsas, duplicatas e arquivos já conhecidos usando hash e números mágicos.", "arquivo": "desafio.md"}
+  ],
+  "quiz": [
+    {"pergunta": "Qual a diferença entre Path('casos').glob('*.txt') e Path('casos').rglob('*.txt')?", "opcoes": ["Nenhuma", "rglob também procura dentro de todas as subpastas", "rglob só acha arquivos ocultos", "glob é mais lento"], "correta": 1, "explicacao": "glob olha só o primeiro nível; rglob desce recursivamente em todas as subpastas."},
+    {"pergunta": "Você trocou uma única letra num depoimento. O que acontece com o SHA-256 dele?", "opcoes": ["Muda só um caractere do hash", "Não muda, porque o tamanho é o mesmo", "Muda completamente (efeito avalanche)", "Fica zerado"], "correta": 2, "explicacao": "Qualquer alteração de um byte gera um hash totalmente diferente; é isso que permite detectar adulteração."},
+    {"pergunta": "Onde a cadeia de custódia está prevista na lei brasileira?", "opcoes": ["Na LGPD, art. 7º", "No Marco Civil da Internet", "Nos arts. 158-A a 158-F do CPP, incluídos pela Lei 13.964/2019", "No Código Civil"], "correta": 2, "explicacao": "O Pacote Anticrime (Lei 13.964/2019) incluiu os arts. 158-A a 158-F no Código de Processo Penal."}
+  ],
+  "inovacao": {"titulo": "Fuzzy hashing com ppdeep", "resumo": "O ssdeep (em Python puro: ppdeep) gera hashes parecidos para arquivos parecidos e dá nota de 0 a 100. SHA-256 é prova; fuzzy hash é pista."}
+}

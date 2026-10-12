@@ -1,0 +1,10 @@
+{
+  "_aviso": "AMOSTRA ilustrativa: resultados SIMULADOS de teste de proxies, no formato da resposta de https://httpbin.org/get (campos origin e headers). IPs de documentação (RFC 5737).",
+  "ip_real": "203.0.113.45",
+  "resultados": {
+    "198.51.100.10:3128": {"latencia_ms": 412, "resposta": {"origin": "198.51.100.10", "headers": {"Host": "httpbin.org", "User-Agent": "python-para-osint-21-dias/estudo"}}},
+    "198.51.100.22:8080": {"latencia_ms": 655, "resposta": {"origin": "203.0.113.45, 198.51.100.22", "headers": {"Host": "httpbin.org", "Via": "1.1 squid", "X-Forwarded-For": "203.0.113.45"}}},
+    "203.0.113.77:3128": {"erro": "timed out"},
+    "192.0.2.5:80": {"latencia_ms": 1890, "resposta": {"origin": "192.0.2.5", "headers": {"Host": "httpbin.org", "Via": "1.1 proxy-anonimo"}}}
+  }
+}

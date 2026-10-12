@@ -1,0 +1,19 @@
+{
+  "dia": 12,
+  "slug": "dia-12-proxies",
+  "titulo": "Proxies, User-Agent e OPSEC",
+  "titulo_original": "Day 12. Proxies",
+  "capitulo": "Disfarce digital",
+  "pip_original": ["requests"],
+  "cartas": [
+    {"numero": 12, "nivel": 1, "rank": "C", "nome": "Jutsu do Embaixador", "efeito": "Envia pedidos por um proxy, testa uma lista deles e troca o User-Agent com requests.", "arquivo": "original/simple_proxy.py"},
+    {"numero": 33, "nivel": 2, "rank": "A", "nome": "Jutsu do Disfarce Digital", "efeito": "Mostra o IP e os cabeçalhos que você revela, usa ProxyHandler e roda um checklist de OPSEC.", "arquivo": "br/01_meu_ip.py"},
+    {"numero": 54, "nivel": 3, "rank": "S", "nome": "Peneira de Proxies", "efeito": "Classifica proxies em morto, transparente, anônimo ou elite e mede a latência de cada um.", "arquivo": "desafio.md"}
+  ],
+  "quiz": [
+    {"pergunta": "Você trocou o User-Agent do script para o de um Chrome. O que o site ainda vê?", "opcoes": ["Nada, você ficou invisível", "O seu IP real", "Só o nome do seu computador", "A sua senha do Wi-Fi"], "correta": 1, "explicacao": "O User-Agent é só um cabeçalho. O IP de origem continua o mesmo; para mudá-lo é preciso proxy ou VPN."},
+    {"pergunta": "Um proxy que repassa o seu IP no cabeçalho X-Forwarded-For é chamado de…", "opcoes": ["elite", "anônimo", "transparente", "reverso"], "correta": 2, "explicacao": "O transparente deixa o site ver o seu IP; o anônimo esconde o IP mas avisa que é proxy; o elite não avisa nada."},
+    {"pergunta": "Por que não usar um proxy gratuito qualquer de uma lista pública numa investigação?", "opcoes": ["Porque é lento demais", "Porque o dono do proxy vê e pode alterar todo o tráfego, e ele pode ser uma máquina invadida", "Porque só funciona com requests", "Porque o Python proíbe"], "correta": 1, "explicacao": "Todo proxy enxerga o que passa por ele. Proxy desconhecido pode roubar dados e comprometer a investigação."}
+  ],
+  "inovacao": {"titulo": "Impressão digital TLS (JA3/JA4)", "resumo": "O formato do ClientHello do TLS denuncia scripts Python mesmo com UA de navegador. Disfarce precisa ser coerente em todas as camadas."}
+}

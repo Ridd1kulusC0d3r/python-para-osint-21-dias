@@ -1,0 +1,7 @@
+# Lista FICTÍCIA de proxies para o Desafio S do Dia 12.
+# Os IPs são de faixas reservadas para documentação (RFC 5737): não existem de verdade.
+# Na prática, coloque aqui SÓ proxies que você controla ou contratou.
+198.51.100.10:3128
+198.51.100.22:8080
+203.0.113.77:3128
+192.0.2.5:80

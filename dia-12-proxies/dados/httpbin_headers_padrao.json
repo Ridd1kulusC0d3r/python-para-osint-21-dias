@@ -1,0 +1,9 @@
+{
+  "_aviso": "AMOSTRA ilustrativa no formato de https://httpbin.org/headers para um pedido feito com urllib SEM User-Agent personalizado.",
+  "headers": {
+    "Accept-Encoding": "identity",
+    "Host": "httpbin.org",
+    "User-Agent": "Python-urllib/3.12",
+    "X-Amzn-Trace-Id": "Root=1-00000000-000000000000000000000000"
+  }
+}

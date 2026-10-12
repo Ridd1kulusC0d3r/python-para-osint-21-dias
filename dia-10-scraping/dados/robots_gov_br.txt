@@ -1,0 +1,9 @@
+# AMOSTRA ilustrativa no formato robots.txt (não é a cópia fiel do arquivo atual de www.gov.br).
+# Serve só para o exercício rodar sem internet.
+User-agent: *
+Disallow: /login
+Disallow: /pt-br/busca
+Allow: /
+
+User-agent: RoboMalcriado
+Disallow: /

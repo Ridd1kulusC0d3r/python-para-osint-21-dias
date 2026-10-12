@@ -1,0 +1,19 @@
+{
+  "dia": 11,
+  "slug": "dia-11-regex",
+  "titulo": "Expressões regulares",
+  "titulo_original": "Day 11. Regular expressions",
+  "capitulo": "A conversa",
+  "pip_original": ["requests"],
+  "cartas": [
+    {"numero": 11, "nivel": 1, "rank": "C", "nome": "Jutsu da Arroba", "efeito": "Baixa uma página e extrai tudo o que tem formato de e-mail com re.findall.", "arquivo": "original/extract_emails.py"},
+    {"numero": 32, "nivel": 2, "rank": "A", "nome": "Jutsu do Padrão Brasileiro", "efeito": "Regex de CPF, CNPJ alfanumérico, telefone, CEP, placa e PIX, confirmadas por dígito verificador.", "arquivo": "br/01_padroes_br.py"},
+    {"numero": 53, "nivel": 3, "rank": "S", "nome": "O Elo Telefônico", "efeito": "Normaliza telefones de todas as fontes do caso e revela o número que liga site, conversa e vítimas.", "arquivo": "desafio.md"}
+  ],
+  "quiz": [
+    {"pergunta": "Qual regex casa com um CEP escrito como 30130-010 ou 30130010?", "opcoes": ["\\d{5}-\\d{3}", "\\d{5}-?\\d{3}", "\\d{8}", "[0-9]+-[0-9]+"], "correta": 1, "explicacao": "O ? torna o hífen opcional: 5 dígitos, hífen ou nada, 3 dígitos."},
+    {"pergunta": "A regex encontrou '31.560.427/0001-71' na conversa. O que isso prova?", "opcoes": ["Que a empresa existe", "Que o texto tem o FORMATO de um CNPJ; falta conferir o dígito verificador", "Que é o CNPJ do Banco do Brasil", "Nada, regex não funciona com barra"], "correta": 1, "explicacao": "Regex reconhece formato. Neste caso o dígito verificador não confere: o número é inválido."},
+    {"pergunta": "No CNPJ alfanumérico, como uma letra entra no cálculo do dígito verificador?", "opcoes": ["Ela é ignorada", "Vale a posição no alfabeto (A=1)", "Vale ord(caractere) − 48 (A=17)", "Vale sempre zero"], "correta": 2, "explicacao": "A regra da Receita usa o código ASCII menos 48: '0'..'9' continuam 0..9 e 'A' vale 17."}
+  ],
+  "inovacao": {"titulo": "iocextract: regex de indicadores", "resumo": "A biblioteca iocextract acha URLs, IPs, e-mails e hashes, inclusive 'desarmados' (hxxp, [.]), e os rearma com refang=True."}
+}

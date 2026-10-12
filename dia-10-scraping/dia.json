@@ -1,0 +1,19 @@
+{
+  "dia": 10,
+  "slug": "dia-10-scraping",
+  "titulo": "Scraping (raspagem de páginas)",
+  "titulo_original": "Day 10. Scraping",
+  "capitulo": "A vitrine congelada",
+  "pip_original": ["requests", "beautifulsoup4"],
+  "cartas": [
+    {"numero": 10, "nivel": 1, "rank": "D", "nome": "Jutsu da Sopa de Tags", "efeito": "Baixa uma página e captura o título h1 com requests e BeautifulSoup.", "arquivo": "original/scraping.py"},
+    {"numero": 31, "nivel": 2, "rank": "B", "nome": "Jutsu da Vitrine Congelada", "efeito": "Raspa a cópia salva da loja com html.parser: preços, PIX, CNPJ, links e comentários escondidos.", "arquivo": "br/01_html_parser_vitrine.py"},
+    {"numero": 52, "nivel": 3, "rank": "S", "nome": "Caçador de Lojas Irmãs", "efeito": "Compara impressões digitais de páginas (generator, PIX, WhatsApp, e-mail) e aponta lojas da mesma origem.", "arquivo": "desafio.md"}
+  ],
+  "quiz": [
+    {"pergunta": "No html.parser, qual método recebe o conteúdo de um <!-- comentário -->?", "opcoes": ["handle_starttag", "handle_data", "handle_comment", "handle_endtag"], "correta": 2, "explicacao": "handle_comment é chamado para cada comentário HTML; ele não aparece na tela, mas está no código."},
+    {"pergunta": "O que a tag <meta name=\"generator\" content=\"LojaPronta 3.2\"> revela?", "opcoes": ["O IP do servidor", "A plataforma (e versão) usada para montar o site", "O dono do domínio", "A chave PIX da loja"], "correta": 1, "explicacao": "O generator é a assinatura da ferramenta que gerou a página; serve de impressão digital para achar sites irmãos."},
+    {"pergunta": "Antes de raspar um site ao vivo, o script consulta o robots.txt para…", "opcoes": ["descobrir a senha do painel", "saber o que o dono do site pede que robôs não acessem", "ficar anônimo", "baixar o site mais rápido"], "correta": 1, "explicacao": "O robots.txt declara as regras para robôs; urllib.robotparser.can_fetch responde se a URL é permitida."}
+  ],
+  "inovacao": {"titulo": "Texto principal com trafilatura", "resumo": "A biblioteca trafilatura separa automaticamente o texto principal (título, data, autor) de menus e anúncios. Ótima para monitorar notícias."}
+}

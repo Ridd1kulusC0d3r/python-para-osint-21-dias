@@ -1,0 +1,19 @@
+{
+  "dia": 13,
+  "slug": "dia-13-listas",
+  "titulo": "Funções para trabalhar com listas",
+  "titulo_original": "Day 13. Functions for working with lists",
+  "capitulo": "O mapa das vítimas",
+  "pip_original": [],
+  "cartas": [
+    {"numero": 13, "nivel": 1, "rank": "C", "nome": "Jutsu da Fila", "efeito": "Copia, ordena, insere, acrescenta e remove itens de uma lista de cidades.", "arquivo": "original/array_sort.py"},
+    {"numero": 34, "nivel": 2, "rank": "A", "nome": "Jutsu da Lista Ordenada", "efeito": "Ordena com acento, tira repetidos mantendo a ordem, faz ranking e compara meses com conjuntos.", "arquivo": "br/02_ordenar_com_acento.py"},
+    {"numero": 55, "nivel": 3, "rank": "S", "nome": "Fila de Diligências", "efeito": "Agrupa denúncias por chave PIX, soma o prejuízo e ordena por onde a investigação deve começar.", "arquivo": "desafio.md"}
+  ],
+  "quiz": [
+    {"pergunta": "Por que sorted(['Zé Doca', 'Águas Lindas']) deixa 'Águas Lindas' por último?", "opcoes": ["Porque o Python ordena de trás para frente", "Porque 'Á' tem código Unicode (193) maior que o de 'Z' (90)", "Porque nomes compostos vão para o fim", "Porque é um bug do Python"], "correta": 1, "explicacao": "sorted compara códigos Unicode. A solução é passar key= com uma versão sem acento e em minúsculas."},
+    {"pergunta": "Qual destas expressões tira os repetidos MANTENDO a ordem em que apareceram?", "opcoes": ["set(lista)", "sorted(lista)", "list(dict.fromkeys(lista))", "lista.copy()"], "correta": 2, "explicacao": "Dicionários guardam a ordem de inserção e não repetem chaves; set não garante ordem."},
+    {"pergunta": "Se outubro e novembro são conjuntos de cidades, o que 'novembro - outubro' devolve?", "opcoes": ["As cidades dos dois meses", "As cidades que só aparecem em novembro", "A quantidade de vítimas", "Um erro, não se subtrai texto"], "correta": 1, "explicacao": "A diferença de conjuntos devolve o que está no primeiro e não está no segundo."}
+  ],
+  "inovacao": {"titulo": "Ordenação humana com natsort", "resumo": "natsort ordena print_1, print_2, print_10 como uma pessoa faria e, com ns.LOCALE, respeita acentos. Ótimo para listas de evidências."}
+}

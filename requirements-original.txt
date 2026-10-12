@@ -1,5 +1,13 @@
 # Bibliotecas usadas SÓ pelos exercícios originais (nível 1).
 # A camada Brasil (nível 2) não precisa de nada além do Python.
 #   pip install -r requirements-original.txt
+basemap
+beautifulsoup4
 dnspython
+folium
+fpdf2
+matplotlib
+python-docx
 python-whois
+requests
+XlsxWriter
