@@ -1,0 +1,19 @@
+{
+  "dia": 19,
+  "slug": "dia-19-wayback-e-datas",
+  "titulo": "Wayback Machine e funções de data e hora",
+  "titulo_original": "Day 19. Wayback Machine and time/date functions",
+  "capitulo": "O site que sumiu",
+  "pip_original": ["wayback"],
+  "cartas": [
+    {"numero": 19, "nivel": 1, "rank": "C", "nome": "Jutsu da Máquina do Tempo", "efeito": "Baixa cópias antigas de um site com o pacote wayback e formata datas com datetime.", "arquivo": "original/download_mementos.py"},
+    {"numero": 40, "nivel": 2, "rank": "A", "nome": "Jutsu da Linha do Tempo", "efeito": "API CDX sem pip, datas com fuso de Brasília e a linha do tempo do golpe com o efeito Black Friday.", "arquivo": "br/03_linha_do_tempo_caso.py"},
+    {"numero": 61, "nivel": 3, "rank": "S", "nome": "Vitrine Vista", "efeito": "Para cada vítima, acha a captura arquivada mais próxima da compra e mede as lacunas sem prova.", "arquivo": "desafio.md"}
+  ],
+  "quiz": [
+    {"pergunta": "Na resposta JSON da API CDX da Wayback Machine, o que é a primeira linha?", "opcoes": ["A captura mais antiga", "A captura mais recente", "O cabeçalho com os nomes das colunas", "Um resumo com o total de capturas"], "correta": 2, "explicacao": "A primeira linha traz urlkey, timestamp, original, mimetype, statuscode, digest e length; os dados vêm depois."},
+    {"pergunta": "Por que não confiar em strftime('%A') para escrever o dia da semana em português?", "opcoes": ["Porque ele sempre erra o dia", "Porque o resultado depende do locale do sistema, que no Colab é inglês", "Porque só funciona no Windows", "Porque %A mostra o ano"], "correta": 1, "explicacao": "Uma lista própria indexada por weekday() dá o mesmo resultado em qualquer computador."},
+    {"pergunta": "Como o script calcula a Black Friday de um ano?", "opcoes": ["Sempre 25 de novembro", "Última sexta-feira de novembro", "A sexta-feira depois da 4ª quinta-feira de novembro", "Primeira sexta de dezembro"], "correta": 2, "explicacao": "A Black Friday segue o dia de Ação de Graças dos EUA (4ª quinta de novembro). Em 2024 isso não foi a última sexta."}
+  ],
+  "inovacao": {"titulo": "cdx_toolkit: Wayback e Common Crawl", "resumo": "Mesma interface para o CDX da Wayback Machine e do Common Crawl. Consulte mais de um arquivo e guarde sua cópia."}
+}

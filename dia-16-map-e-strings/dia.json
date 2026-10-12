@@ -1,0 +1,19 @@
+{
+  "dia": 16,
+  "slug": "dia-16-map-e-strings",
+  "titulo": "map() e funções para strings",
+  "titulo_original": "Day 16. List mapping and functions for work with strings",
+  "capitulo": "Os muitos nomes de Kau",
+  "pip_original": [],
+  "cartas": [
+    {"numero": 16, "nivel": 1, "rank": "C", "nome": "Jutsu do Mapa", "efeito": "Aplica uma função em cada item de uma lista com map(): title, capitalize, replace e split.", "arquivo": "original/array_map.py"},
+    {"numero": 37, "nivel": 2, "rank": "A", "nome": "Jutsu dos Muitos Nomes", "efeito": "Corrige nomes BR, tira acentos e gera centenas de variantes de username a partir de um nome.", "arquivo": "br/03_variantes_username.py"},
+    {"numero": 58, "nivel": 3, "rank": "S", "nome": "Olho das Grafias", "efeito": "Decide se duas grafias podem ser a mesma pessoa, aceitando acentos e iniciais abreviadas.", "arquivo": "desafio.md"}
+  ],
+  "quiz": [
+    {"pergunta": "O que list(map(str.upper, ['ana', 'bia'])) devolve?", "opcoes": ["'ANABIA'", "['ANA', 'BIA']", "Um erro, porque faltam os parênteses em upper", "['Ana', 'Bia']"], "correta": 1, "explicacao": "map aplica str.upper em cada item; a função vai sem parênteses porque quem a chama é o map."},
+    {"pergunta": "Por que usar split(':', 1) para separar autor e mensagem em '[...] Kau: Chave PIX: f38b...'?", "opcoes": ["Porque é mais rápido", "Para cortar só no primeiro ':' e não quebrar a mensagem, que também tem ':'", "Porque split(':') não funciona com acentos", "Para remover os espaços"], "correta": 1, "explicacao": "O segundo argumento limita o número de cortes; o resto da linha fica inteiro."},
+    {"pergunta": "Qual é o jeito certo de transformar 'Brandão' em 'brandao'?", "opcoes": ["'Brandão'.lower()", "'Brandão'.replace('ã', 'a') para cada letra possível", "Normalizar com unicodedata NFKD, descartar os acentos e aplicar casefold()", "'Brandão'.title()"], "correta": 2, "explicacao": "NFKD separa a letra do acento; descartando as marcas combinantes, sobra a letra base."}
+  ],
+  "inovacao": {"titulo": "Comparação aproximada com RapidFuzz", "resumo": "RapidFuzz (MIT) mede semelhança entre textos rápido, inclusive ignorando a ordem das palavras. Normalize sem acento antes de comparar."}
+}

@@ -1,0 +1,19 @@
+{
+  "dia": 20,
+  "slug": "dia-20-web-apps",
+  "titulo": "Criando web apps",
+  "titulo_original": "Day 20. Web apps creation",
+  "capitulo": "O painel do caso",
+  "pip_original": ["streamlit"],
+  "cartas": [
+    {"numero": 20, "nivel": 1, "rank": "C", "nome": "Jutsu da Vitrine Própria", "efeito": "Transforma um script em página web com caixa de texto e botão usando Streamlit.", "arquivo": "original/webapp.py"},
+    {"numero": 41, "nivel": 2, "rank": "A", "nome": "Jutsu do Painel", "efeito": "Painel de busca no caso com http.server, parse_qs e html.escape. Testa a si mesmo contra XSS.", "arquivo": "br/02_painel_do_caso.py"},
+    {"numero": 62, "nivel": 3, "rank": "S", "nome": "Oráculo JSON", "efeito": "API do caso com rotas JSON, filtros por cidade, chave e período, e testes de que nada sensível vaza.", "arquivo": "desafio.md"}
+  ],
+  "quiz": [
+    {"pergunta": "Por que o painel passa o termo buscado por html.escape antes de mostrá-lo na página?", "opcoes": ["Para a busca ficar mais rápida", "Para que um <script> digitado apareça como texto e não seja executado (XSS)", "Para tirar os acentos", "Porque o http.server exige"], "correta": 1, "explicacao": "html.escape troca < > & \" por entidades; o navegador mostra o texto em vez de interpretá-lo como HTML."},
+    {"pergunta": "O que urllib.parse.parse_qs('campo=cidade&q=belo+horizonte') devolve?", "opcoes": ["{'campo': 'cidade', 'q': 'belo+horizonte'}", "{'campo': ['cidade'], 'q': ['belo horizonte']}", "['cidade', 'belo horizonte']", "Um erro, por causa do '+'"], "correta": 1, "explicacao": "Cada valor vem numa lista (um parâmetro pode se repetir) e o '+' é decodificado como espaço."},
+    {"pergunta": "Qual a diferença entre subir o servidor em 127.0.0.1 e em 0.0.0.0?", "opcoes": ["Nenhuma", "127.0.0.1 só aceita conexões do próprio computador; 0.0.0.0 aceita de qualquer máquina da rede", "0.0.0.0 é mais seguro", "127.0.0.1 só funciona no Windows"], "correta": 1, "explicacao": "Comece sempre pelo 127.0.0.1; abra para a rede só quando precisar e souber quem acessa."}
+  ],
+  "inovacao": {"titulo": "stlite: Streamlit no navegador", "resumo": "Port do Streamlit para Pyodide (WebAssembly): o app roda inteiro no navegador de quem abre, sem servidor e sem enviar dados."}
+}

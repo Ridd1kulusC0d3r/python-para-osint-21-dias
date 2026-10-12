@@ -1,0 +1,19 @@
+{
+  "dia": 18,
+  "slug": "dia-18-graficos-e-mapas",
+  "titulo": "Gerando gráficos e mapas",
+  "titulo_original": "Day 18. Generating charts and maps",
+  "capitulo": "Onde estão as vítimas",
+  "pip_original": ["matplotlib", "basemap", "folium"],
+  "cartas": [
+    {"numero": 18, "nivel": 1, "rank": "C", "nome": "Jutsu do Pincel", "efeito": "Desenha gráfico de barras com matplotlib e mapa-múndi com Basemap (ou folium, na versão 2026).", "arquivo": "original/bar.py"},
+    {"numero": 39, "nivel": 2, "rank": "A", "nome": "Jutsu do Mapa das Vítimas", "efeito": "Barras no terminal, gráfico SVG e mapa Leaflet com círculos proporcionais, tudo gerado com stdlib.", "arquivo": "br/03_mapa_leaflet.py"},
+    {"numero": 60, "nivel": 3, "rank": "S", "nome": "Cartógrafo Offline", "efeito": "Projeta lat/lon em SVG sem internet e mede a distância de cada vítima ao endereço falso (haversine).", "arquivo": "desafio.md"}
+  ],
+  "quiz": [
+    {"pergunta": "No Basemap, map.plot(43.00, 39.00) marca qual ponto?", "opcoes": ["Latitude 43, longitude 39", "Longitude 43, latitude 39", "O pixel (43, 39) da imagem", "Depende do zoom"], "correta": 1, "explicacao": "Basemap (como o GeoJSON) recebe x = longitude e y = latitude. folium e Leaflet usam a ordem [lat, lon]."},
+    {"pergunta": "Uma cidade tem 4 vezes mais vítimas que outra. O raio do círculo dela deve ser…", "opcoes": ["4 vezes maior", "2 vezes maior", "16 vezes maior", "igual, só a cor muda"], "correta": 1, "explicacao": "O olho compara áreas; área ∝ raio², então o raio deve ser proporcional à raiz quadrada do valor."},
+    {"pergunta": "Por que o script do mapa Leaflet usa json.dumps para colocar os dados no HTML?", "opcoes": ["Para deixar o arquivo menor", "Porque o Leaflet só lê arquivos .json", "Para gerar JavaScript válido (aspas, acentos e listas) sem montar o texto na mão", "Para criptografar os dados"], "correta": 2, "explicacao": "Uma lista de dicionários Python vira um array de objetos JavaScript válido em uma linha."}
+  ],
+  "inovacao": {"titulo": "Overture Maps com cliente Python", "resumo": "Base aberta de lugares, prédios e endereços; 'pip install overturemaps' baixa uma região em GeoJSON para checar endereços."}
+}

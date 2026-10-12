@@ -10,4 +10,6 @@ matplotlib
 python-docx
 python-whois
 requests
+streamlit
+wayback
 XlsxWriter

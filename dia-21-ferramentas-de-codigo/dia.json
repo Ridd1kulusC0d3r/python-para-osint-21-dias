@@ -1,0 +1,19 @@
+{
+  "dia": 21,
+  "slug": "dia-21-ferramentas-de-codigo",
+  "titulo": "Ferramentas para ajudar você a trabalhar com código",
+  "titulo_original": "Day 21. Tools to help you work with code",
+  "capitulo": "O dossiê",
+  "pip_original": [],
+  "cartas": [
+    {"numero": 21, "nivel": 1, "rank": "C", "nome": "Jutsu do Olho Crítico", "efeito": "Acha erros de sintaxe offline com ast e py_compile, sem mandar seu código para nenhum site.", "arquivo": "original/nivel1_checar_sintaxe.py"},
+    {"numero": 42, "nivel": 2, "rank": "A", "nome": "Jutsu do Revisor", "efeito": "doctest, unittest e o dossiê final que confere os próprios números antes de ser entregue.", "arquivo": "br/03_dossie_final.py"},
+    {"numero": 63, "nivel": 3, "rank": "S", "nome": "Guardião do Repositório", "efeito": "Lê todos os scripts do curso com ast e aponta quem quebra as regras: input(), pip, encoding.", "arquivo": "desafio.md"}
+  ],
+  "quiz": [
+    {"pergunta": "Qual tipo de erro NENHUM verificador de sintaxe ou de estilo consegue encontrar?", "opcoes": ["Esquecer o ':' no fim do for", "Linha longa demais", "Um peso trocado no cálculo do dígito verificador, que dá resultado errado", "Import não usado"], "correta": 2, "explicacao": "Erro de lógica roda sem reclamar. Só um teste com resposta conhecida (doctest, unittest) percebe."},
+    {"pergunta": "Por que o revisor do desafio usa ast.parse em vez de importar ou executar os scripts?", "opcoes": ["Porque é mais bonito", "Porque ast lê a estrutura do código sem executar nada, então é seguro e não faz requisições", "Porque o import não funciona com acentos", "Porque ast corrige os erros sozinho"], "correta": 1, "explicacao": "ast.parse monta a árvore de sintaxe; nenhuma linha roda. Dá para analisar até código suspeito."},
+    {"pergunta": "Você precisa de ajuda com um script que processa denúncias reais. O que fazer antes de pedir a uma IA pública?", "opcoes": ["Colar o CSV inteiro para ela entender melhor", "Anonimizar: trocar nomes, CPFs e chaves PIX por valores inventados, mantendo só a estrutura", "Nada, a IA é confidencial", "Mandar só os CPFs"], "correta": 1, "explicacao": "A IA precisa da estrutura do dado, não do dado. Colar dado pessoal é compartilhamento com terceiro (LGPD)."}
+  ],
+  "inovacao": {"titulo": "Ruff: estilo e bugs, offline", "resumo": "Ruff (MIT, em Rust) junta as regras de flake8, isort e outros e formata o código. 'ruff check .' antes de publicar a ferramenta."}
+}
