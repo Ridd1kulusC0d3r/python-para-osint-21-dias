@@ -1,0 +1,14 @@
+[28/11/2025 21:14] Kau Ofertas: Boa noite! O iPhone sai por 1.999 no PIX 🔥
+[28/11/2025 21:15] Cliente: Qual o CNPJ da loja?
+[28/11/2025 21:15] Kau Ofertas: CNPJ 48.217.093/0001-30, pode confiar
+[28/11/2025 21:16] Kau Ofertas: Chave PIX: f38b2ffc-80a4-df5a-51c9-bc701e7ea419
+[28/11/2025 21:20] Cliente: Paguei. Meu CPF é 019.018.791-35 pra nota
+[28/11/2025 21:21] Kau Ofertas: Recebido! Qualquer coisa financeiro@megaoferta-brasil.example
+[29/11/2025 09:02] Kau Ofertas: Falta o PIX do frete, R$ 89,90 na chave f3f49249-dc28-ff90-a5ae-c7978306d03b
+[29/11/2025 09:05] Cliente: Me liga no (35) 99636-8486
+[29/11/2025 09:06] Kau Ofertas: Liga no meu outro número +55 31 9 8888-0101
+[29/11/2025 09:30] Kau Ofertas: Envio pra CEP 30130-010? Confirma o endereço
+[29/11/2025 10:11] Kau Ofertas: Se preferir manda e-mail pra kau.ofertas@example.com
+[30/11/2025 18:44] Kau Ofertas: Estamos com problema no site, usa a chave do sócio e5121482-3929-2d22-e255-accb1a466884
+[30/11/2025 18:45] Kau Ofertas: CNPJ do sócio: 31.560.427/0001-71
+[01/12/2025 08:00] Cliente: O site saiu do ar?? Quero meu dinheiro!

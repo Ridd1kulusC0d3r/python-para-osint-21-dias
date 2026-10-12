@@ -1,0 +1,34 @@
+{
+  "dominio": "megaoferta-brasil.example",
+  "cnpj_rodape": "48.217.093/0001-30",
+  "chaves_pix": [
+    "f38b2ffc-80a4-df5a-51c9-bc701e7ea419",
+    "f3f49249-dc28-ff90-a5ae-c7978306d03b",
+    "e5121482-3929-2d22-e255-accb1a466884"
+  ],
+  "contas_laranja": [
+    {
+      "titular": "Jéssica Prado Lima",
+      "banco": "Banco Digital Fictício S.A.",
+      "chave": "f38b2ffc-80a4-df5a-51c9-bc701e7ea419"
+    },
+    {
+      "titular": "Wellington Arruda Paz",
+      "banco": "Pague Já IP (fictício)",
+      "chave": "f3f49249-dc28-ff90-a5ae-c7978306d03b"
+    },
+    {
+      "titular": "M. R. Brandão Comércio ME",
+      "banco": "Cooperativa Imaginária",
+      "chave": "e5121482-3929-2d22-e255-accb1a466884"
+    }
+  ],
+  "suspeito": {
+    "nome": "Kauã Teixeira Brandão",
+    "apelido": "kau.ofertas",
+    "telefone": "(31) 98888-0101",
+    "email": "financeiro@megaoferta-brasil.example"
+  },
+  "total_denuncias": 37,
+  "aviso": "Todos os dados são fictícios e gerados por caso/gerar_dados.py (semente 2026)."
+}

@@ -1,0 +1,12 @@
+{
+  "_aviso": "AMOSTRA reduzida do bootstrap RDAP da IANA (https://data.iana.org/rdap/dns.json). O arquivo real tem centenas de TLDs.",
+  "description": "RDAP bootstrap file for Domain Name System registrations",
+  "publication": "2026-01-01T00:00:00Z",
+  "services": [
+    [["br"], ["https://rdap.registro.br/"]],
+    [["com", "net"], ["https://rdap.verisign.com/com/v1/", "https://rdap.verisign.com/net/v1/"]],
+    [["org"], ["https://rdap.publicinterestregistry.org/rdap/"]],
+    [["pt"], ["https://rdap.dns.pt/"]]
+  ],
+  "version": "1.0"
+}

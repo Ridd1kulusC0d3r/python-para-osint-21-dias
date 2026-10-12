@@ -1,0 +1,15 @@
+% AMOSTRA ilustrativa no formato do WHOIS do registro.br (porta 43).
+% Os valores podem diferir da resposta real atual.
+
+domain:      registro.br
+owner:       Núcleo de Inf. e Coord. do Ponto BR - NIC.BR
+country:     BR
+owner-c:     FAN
+tech-c:      FAN
+nserver:     a.dns.br
+nserver:     b.dns.br
+nserver:     c.dns.br
+created:     19970101 #1
+changed:     20250610
+expires:     20990101
+status:      published

@@ -1,0 +1,5 @@
+# Bibliotecas usadas SÓ pelos exercícios originais (nível 1).
+# A camada Brasil (nível 2) não precisa de nada além do Python.
+#   pip install -r requirements-original.txt
+dnspython
+python-whois

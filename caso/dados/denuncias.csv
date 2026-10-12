@@ -1,0 +1,38 @@
+id;data;nome_vitima;cpf;cidade;uf;valor;produto;chave_pix_destino;telefone_contato;relato_curto
+DEN-001;2025-11-30;Vanessa Mendonça Moreira;973.091.141-08;Governador Valadares;MG;149.90;Air Fryer 5L;f38b2ffc-80a4-df5a-51c9-bc701e7ea419;37993916148;Pediram mais um PIX de 'frete'.
+DEN-002;2025-10-27;Mariana Lima Carvalho;188.447.294-07;Belo Horizonte;MG;1899.00;PlayStation 5;e5121482-3929-2d22-e255-accb1a466884;+55 38 9 8944-7917;Recebi código de rastreio falso.
+DEN-003;2025-11-07;Mariana Teixeira Moreira;976.846.978-11;Divinópolis;MG;149.90;Air Fryer 5L;f38b2ffc-80a4-df5a-51c9-bc701e7ea419;34995683113;Paguei no PIX e o site sumiu.
+DEN-004;2025-11-30;Zé Carlos Barbosa Pereira;731.778.486-96;Uberlandia;MG;1799.00;Galaxy S24;e5121482-3929-2d22-e255-accb1a466884;37996487585;Me mandaram um boleto depois do PIX.
+DEN-005;2025-11-03;Gabriela Araújo Lima;978.753.477-18;Divinópolis;MG;1999.00;iPhone 15 128GB;f3f49249-dc28-ff90-a5ae-c7978306d03b;+55 31 9 9702-5752;Vi o anúncio no Instagram patrocinado.
+DEN-006;2025-11-29;Otávio Pereira Rocha;267.147.513-62;Ipatinga;MG;1799.00;Galaxy S24;f38b2ffc-80a4-df5a-51c9-bc701e7ea419;+55 31 9 8188-1003;O site cobrava só à vista no PIX.
+DEN-007;2025-11-18;Tiago Moreira Oliveira;084.520.599-47;Belo Horizone;MG;2499.00;Notebook i7 16GB;e5121482-3929-2d22-e255-accb1a466884;(37) 99204-3149;O CNPJ do rodapé não existe.
+DEN-008;2025-11-30;Carla Martins Rodrigues;628.360.161-83;Belo Horizonte;MG;1299.90;"Smart TV 55"" 4K";f3f49249-dc28-ff90-a5ae-c7978306d03b;38999131422;Paguei no PIX e o site sumiu.
+DEN-009;2025-11-21;Rafael Ribeiro Fernandes;177.992.298-10;contagem;MG;1799.00;Galaxy S24;f3f49249-dc28-ff90-a5ae-c7978306d03b;38989394822;Recebi código de rastreio falso.
+DEN-010;2025-10-12;Sabrina Gomes Souza;073.702.838-60;Belo Horizone;MG;1299.90;"Smart TV 55"" 4K";f38b2ffc-80a4-df5a-51c9-bc701e7ea419;31987985469;Me mandaram um boleto depois do PIX.
+DEN-011;2025-11-21;Sabrina Martins Oliveira;477.647.258-97;Sete Lagoas;MG;149.90;Air Fryer 5L;f3f49249-dc28-ff90-a5ae-c7978306d03b;(32) 99671-2549;Pediram mais um PIX de 'frete'.
+DEN-012;2025-11-24;Henrique Silva Oliveira;205.258.983-01;belo horizonte;MG;149.90;Air Fryer 5L;e5121482-3929-2d22-e255-accb1a466884;32991384513;O CNPJ do rodapé não existe.
+DEN-013;2025-11-07;Tiago Lima Moreira;621.052.185-17;Uberaba;MG;1299.90;"Smart TV 55"" 4K";f38b2ffc-80a4-df5a-51c9-bc701e7ea419;+55 38 9 8330-5273;O CNPJ do rodapé não existe.
+DEN-014;2025-10-27;Carla Silva Martins;304.118.955-06;Poços de Caldas;MG;1899.00;PlayStation 5;e5121482-3929-2d22-e255-accb1a466884;31998937622;Vi o anúncio no Instagram patrocinado.
+DEN-015;2025-10-27;Vanessa Almeida Mendonça;846.450.604-06;Juiz de Fora;MG;149.90;Air Fryer 5L;f3f49249-dc28-ff90-a5ae-c7978306d03b;31986087826;Vi o anúncio no Instagram patrocinado.
+DEN-016;2025-10-18;Tiago Silva Moreira;129.110.285-03;Poços de Caldas;MG;1899.00;PlayStation 5;e5121482-3929-2d22-e255-accb1a466884;32980587959;Vendedor parou de responder no WhatsApp.
+DEN-017;2025-11-18;Lucas Martins Gomes;228.088.642-13;Betim;MG;149.90;Air Fryer 5L;f38b2ffc-80a4-df5a-51c9-bc701e7ea419;(32) 99108-8845;Me mandaram um boleto depois do PIX.
+DEN-018;2025-10-30;Isabela Fernandes Costa;808.458.500-24;Pocos de Caldas;MG;1799.00;Galaxy S24;f38b2ffc-80a4-df5a-51c9-bc701e7ea419;+55 31 9 9986-4634;Vendedor parou de responder no WhatsApp.
+DEN-019;2025-11-29;Letícia Gomes Carvalho;355.778.794-00;contagem;MG;1299.90;"Smart TV 55"" 4K";f38b2ffc-80a4-df5a-51c9-bc701e7ea419;35983148943;Paguei no PIX e o site sumiu.
+DEN-020;2025-10-12;Lucas Barbosa Martins;842.108.394-50;Uberaba;MG;1999.00;iPhone 15 128GB;f38b2ffc-80a4-df5a-51c9-bc701e7ea419;+55 35 9 9103-9463;Vendedor parou de responder no WhatsApp.
+DEN-021;2025-11-27;Rafael Pereira Oliveira;409.324.484-70;juiz de fora;MG;1299.90;"Smart TV 55"" 4K";f38b2ffc-80a4-df5a-51c9-bc701e7ea419;+55 34 9 9999-1154;O site cobrava só à vista no PIX.
+DEN-022;2025-10-29;Natália Carvalho Moreira;822.018.051-01;Uberlandia;MG;1299.90;"Smart TV 55"" 4K";f38b2ffc-80a4-df5a-51c9-bc701e7ea419;31992275065;Vendedor parou de responder no WhatsApp.
+DEN-023;2025-11-07;Diego Fernandes Ribeiro;415.771.883-65;juiz de fora;MG;1999.00;iPhone 15 128GB;e5121482-3929-2d22-e255-accb1a466884;+55 38 9 8169-2131;Recebi código de rastreio falso.
+DEN-024;2025-11-18;Paula Araújo Lima;885.576.523-05;Governador Valadares;MG;1799.00;Galaxy S24;f38b2ffc-80a4-df5a-51c9-bc701e7ea419;38995546736;Me mandaram um boleto depois do PIX.
+DEN-025;2025-11-28;Tiago Gomes Almeida;515.474.284-22;Betim;MG;1299.90;"Smart TV 55"" 4K";f3f49249-dc28-ff90-a5ae-c7978306d03b;(31) 98548-5808;O site cobrava só à vista no PIX.
+DEN-026;2025-11-29;Wagner Gomes Gomes;517.883.655-34;Belo Horizonte;MG;1999.00;iPhone 15 128GB;f3f49249-dc28-ff90-a5ae-c7978306d03b;31980215375;O CNPJ do rodapé não existe.
+DEN-027;2025-11-30;Eduarda Fernandes Teixeira;775.003.145-66;Belo Horizonte;MG;1799.00;Galaxy S24;f38b2ffc-80a4-df5a-51c9-bc701e7ea419;+55 32 9 9275-7052;Recebi código de rastreio falso.
+DEN-028;2025-11-07;Sabrina Almeida Moreira;373.924.196-92;Divinópolis;MG;1999.00;iPhone 15 128GB;e5121482-3929-2d22-e255-accb1a466884;31982211463;O CNPJ do rodapé não existe.
+DEN-029;2025-11-29;Natália Souza Rodrigues;755.559.747-01;Juiz de Fora;MG;2499.00;Notebook i7 16GB;f3f49249-dc28-ff90-a5ae-c7978306d03b;(37) 98272-1356;O site cobrava só à vista no PIX.
+DEN-030;2025-11-24;Lucas Lima Rocha;643.906.188-73;Uberlandia;MG;1299.90;"Smart TV 55"" 4K";f3f49249-dc28-ff90-a5ae-c7978306d03b;31997479349;Vi o anúncio no Instagram patrocinado.
+DEN-031;2025-10-12;Paula Fernandes Fernandes;248.861.930-21;Governador Valadares;MG;1899.00;PlayStation 5;f38b2ffc-80a4-df5a-51c9-bc701e7ea419;(35) 99040-9627;Vendedor parou de responder no WhatsApp.
+DEN-032;2025-11-28;Rafael Almeida Lima;556.898.329-10;Divinopolis;MG;1799.00;Galaxy S24;e5121482-3929-2d22-e255-accb1a466884;(31) 98268-2000;Paguei no PIX e o site sumiu.
+DEN-033;2025-11-21;Isabela Araújo Rodrigues;220.226.978-99;Uberlandia;MG;1299.90;"Smart TV 55"" 4K";f38b2ffc-80a4-df5a-51c9-bc701e7ea419;38998189892;Recebi código de rastreio falso.
+DEN-034;2025-10-12;Otávio Martins Costa;015.945.028-46;contagem;MG;1899.00;PlayStation 5;f38b2ffc-80a4-df5a-51c9-bc701e7ea419;+55 35 9 8408-3796;Pediram mais um PIX de 'frete'.
+DEN-035;2025-11-12;Henrique Ribeiro Almeida;753.478.971-04;contagem;MG;1899.00;PlayStation 5;e5121482-3929-2d22-e255-accb1a466884;(31) 99548-2291;Vi o anúncio no Instagram patrocinado.
+DEN-036;2025-11-12;Zé Carlos Mendonça Rodrigues;360.824.456-51;Belo Horizonte;MG;1999.00;iPhone 15 128GB;f3f49249-dc28-ff90-a5ae-c7978306d03b;37998165474;Vi o anúncio no Instagram patrocinado.
+DEN-037;2025-11-29;Paula Costa Pereira;769.908.541-89;Governador Valadares;MG;1299.90;"Smart TV 55"" 4K";f3f49249-dc28-ff90-a5ae-c7978306d03b;+55 31 9 9666-5523;O CNPJ do rodapé não existe.

@@ -1,0 +1,10 @@
+% AMOSTRA FICTÍCIA — formato inspirado no WHOIS do registro.br
+domain:      megaoferta-brasil.example
+owner:       Kaua T Brandao
+owner-c:     KTB123
+nserver:     ns1.hospedagem-barata.example
+nserver:     ns2.hospedagem-barata.example
+created:     20251002 #12345678
+changed:     20251120
+expires:     20261002
+status:      published

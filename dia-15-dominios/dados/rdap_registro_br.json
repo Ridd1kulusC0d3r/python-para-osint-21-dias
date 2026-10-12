@@ -1,0 +1,20 @@
+{
+  "_aviso": "AMOSTRA ilustrativa no formato RDAP do registro.br (campos e datas podem diferir da resposta real atual).",
+  "objectClassName": "domain",
+  "handle": "registro.br",
+  "ldhName": "registro.br",
+  "status": ["active"],
+  "events": [
+    {"eventAction": "registration", "eventDate": "1997-01-01T12:00:00Z"},
+    {"eventAction": "last changed", "eventDate": "2025-06-10T09:30:00Z"}
+  ],
+  "nameservers": [
+    {"objectClassName": "nameserver", "ldhName": "a.dns.br"},
+    {"objectClassName": "nameserver", "ldhName": "b.dns.br"},
+    {"objectClassName": "nameserver", "ldhName": "c.dns.br"}
+  ],
+  "entities": [
+    {"objectClassName": "entity", "handle": "NICBR", "roles": ["registrant"],
+     "vcardArray": ["vcard", [["version", {}, "text", "4.0"], ["fn", {}, "text", "Núcleo de Inf. e Coord. do Ponto BR - NIC.BR"]]]}
+  ]
+}

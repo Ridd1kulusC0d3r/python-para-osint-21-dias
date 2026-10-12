@@ -1,0 +1,29 @@
+name: "🔧 Um exercício quebrou"
+description: Uma API mudou, uma biblioteca foi atualizada ou o código não roda mais
+title: "🔧 Dia XX: "
+labels: ["api-quebrou"]
+body:
+  - type: input
+    id: arquivo
+    attributes:
+      label: Arquivo
+      placeholder: dia-09-resultados-de-busca/original/ddg_search.py
+    validations:
+      required: true
+  - type: textarea
+    id: erro
+    attributes:
+      label: Mensagem de erro
+      render: shell
+    validations:
+      required: true
+  - type: dropdown
+    id: ambiente
+    attributes:
+      label: Ambiente
+      options: ["Google Colab", "Codespaces", "Windows", "macOS", "Linux"]
+  - type: input
+    id: python
+    attributes:
+      label: Versão do Python
+      placeholder: "3.12"

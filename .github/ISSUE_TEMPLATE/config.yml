@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 💬 Discussões (dúvidas, ideias, fontes BR novas)
+    url: https://github.com/Ridd1kulusC0d3r/python-para-osint-21-dias/discussions
+    about: Para conversar sobre o curso. Ative as Discussions nas configurações do repositório.
+  - name: 📘 Curso original do cipher387
+    url: https://github.com/cipher387/python-for-OSINT-21-days
+    about: Problemas no curso original vão para o repositório do autor.

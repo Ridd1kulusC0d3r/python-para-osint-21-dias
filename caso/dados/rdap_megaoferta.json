@@ -1,0 +1,55 @@
+{
+  "objectClassName": "domain",
+  "ldhName": "megaoferta-brasil.example",
+  "status": [
+    "active"
+  ],
+  "events": [
+    {
+      "eventAction": "registration",
+      "eventDate": "2025-10-02T14:31:08Z"
+    },
+    {
+      "eventAction": "last changed",
+      "eventDate": "2025-11-20T03:12:44Z"
+    },
+    {
+      "eventAction": "expiration",
+      "eventDate": "2026-10-02T14:31:08Z"
+    }
+  ],
+  "nameservers": [
+    {
+      "ldhName": "ns1.hospedagem-barata.example"
+    },
+    {
+      "ldhName": "ns2.hospedagem-barata.example"
+    }
+  ],
+  "entities": [
+    {
+      "roles": [
+        "registrant"
+      ],
+      "handle": "KTB123",
+      "vcardArray": [
+        "vcard",
+        [
+          [
+            "version",
+            {},
+            "text",
+            "4.0"
+          ],
+          [
+            "fn",
+            {},
+            "text",
+            "Kaua T Brandao"
+          ]
+        ]
+      ]
+    }
+  ],
+  "_aviso": "AMOSTRA FICTÍCIA para estudo — não é resposta real de nenhum servidor RDAP"
+}

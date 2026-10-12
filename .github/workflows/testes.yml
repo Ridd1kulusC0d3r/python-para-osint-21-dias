@@ -1,0 +1,76 @@
+# Testes automáticos do curso.
+#  • offline: em todo push/PR. Todos os exercícios BR precisam rodar sem internet.
+#  • ao vivo: toda segunda às 9h (Brasília) e sob demanda. Descobre APIs que mudaram,
+#    confere se original/ continua idêntico ao repositório do cipher387 e abre uma issue se algo quebrou.
+name: testes
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "0 12 * * 1"   # 12:00 UTC = 09:00 em Brasília
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  offline:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python: ["3.9", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Exercícios BR e gabaritos (sem internet)
+        run: python ferramentas/smoke_test.py --offline --relatorio relatorio-offline.md
+      - name: Notebooks atualizados?
+        if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
+        run: |
+          python ferramentas/construir_notebooks.py
+          python ferramentas/gerar_cartas.py
+          python ferramentas/construir_site.py
+          git diff --stat --exit-code || (echo "::error::Rode as ferramentas de build e faça commit dos arquivos gerados." && exit 1)
+      - name: Notebooks executam (offline)
+        if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
+        run: |
+          pip install -q nbclient nbformat ipykernel
+          python ferramentas/executar_notebooks.py --offline
+
+  ao-vivo:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Exercícios BR com internet + comparação com o original
+        id: vivo
+        continue-on-error: true
+        run: python ferramentas/smoke_test.py --originais --relatorio relatorio-ao-vivo.md
+      - name: Resumo
+        if: always()
+        run: cat relatorio-ao-vivo.md >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: relatorio-ao-vivo
+          path: relatorio-ao-vivo.md
+      - name: Abrir issue se algo quebrou
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if grep -q "APIs com problema:\*\* [1-9]\|Falhas:\*\* [1-9]" relatorio-ao-vivo.md; then
+            gh issue create --title "🔧 Teste semanal: algo mudou ($(date +%Y-%m-%d))" \
+              --body-file relatorio-ao-vivo.md --label "api-quebrou" || \
+            gh issue create --title "🔧 Teste semanal: algo mudou ($(date +%Y-%m-%d))" --body-file relatorio-ao-vivo.md
+          fi

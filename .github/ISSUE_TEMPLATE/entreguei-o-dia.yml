@@ -1,0 +1,39 @@
+name: "🥋 Entreguei o dia"
+description: Registre que você terminou um dia do curso (e conquiste as cartas!)
+title: "🥋 Entreguei o Dia "
+labels: ["entrega"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Que bom ter você aqui! Este registro é público e serve de motivação para quem vem depois.
+        **Não cole dados pessoais reais** de nenhuma investigação.
+  - type: dropdown
+    id: dia
+    attributes:
+      label: Qual dia?
+      options: ["Dia 00","Dia 01","Dia 02","Dia 03","Dia 04","Dia 05","Dia 06","Dia 07","Dia 08","Dia 09","Dia 10","Dia 11","Dia 12","Dia 13","Dia 14","Dia 15","Dia 16","Dia 17","Dia 18","Dia 19","Dia 20","Dia 21"]
+    validations:
+      required: true
+  - type: checkboxes
+    id: cartas
+    attributes:
+      label: Cartas conquistadas
+      options:
+        - label: "Nível 1 — exercício original (cipher387)"
+        - label: "Nível 2 — camada Brasil"
+        - label: "Nível 3 — desafio S"
+  - type: dropdown
+    id: ambiente
+    attributes:
+      label: Onde você estudou?
+      options: ["Google Colab", "Codespaces", "Windows", "macOS", "Linux"]
+  - type: textarea
+    id: aprendizado
+    attributes:
+      label: O que você aprendeu ou adaptou?
+      description: Uma ideia, um trecho de código seu, uma fonte BR nova que encontrou...
+  - type: textarea
+    id: travou
+    attributes:
+      label: Onde travou? (opcional)

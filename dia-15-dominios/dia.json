@@ -1,0 +1,19 @@
+{
+  "dia": 15,
+  "slug": "dia-15-dominios",
+  "titulo": "Coleta de informações de domínio",
+  "titulo_original": "Day 15. Domain information gathering",
+  "capitulo": "Quem registrou o domínio?",
+  "pip_original": ["dnspython", "python-whois"],
+  "cartas": [
+    {"numero": 15, "nivel": 1, "rank": "C", "nome": "Jutsu do Registro", "efeito": "Revela o IP e o WHOIS de qualquer domínio com dnspython e python-whois.", "arquivo": "original/whois_info.py"},
+    {"numero": 36, "nivel": 2, "rank": "A", "nome": "Jutsu do Registro Estruturado", "efeito": "RDAP + WHOIS porta 43 + DNS sobre HTTPS, só com stdlib. Funciona no registro.br.", "arquivo": "br/01_rdap_br.py"},
+    {"numero": 57, "nivel": 3, "rank": "S", "nome": "Radar do Recém-Nascido", "efeito": "Varre uma lista de domínios e aponta os criados há menos de 90 dias.", "arquivo": "desafio.md"}
+  ],
+  "quiz": [
+    {"pergunta": "Qual a principal vantagem do RDAP sobre o WHOIS tradicional?", "opcoes": ["É mais antigo e mais estável", "Devolve dados estruturados em JSON via HTTPS", "Mostra a senha do painel do domínio", "Só funciona para domínios .br"], "correta": 1, "explicacao": "RDAP padroniza a resposta em JSON (RFC 9083) e usa HTTPS, o que facilita a automação."},
+    {"pergunta": "Como o script descobre qual servidor RDAP atende o domínio?", "opcoes": ["Chuta rdap.<tld>.com", "Pergunta ao Google", "Lê o arquivo bootstrap da IANA (dns.json)", "Usa o registro MX do domínio"], "correta": 2, "explicacao": "A IANA publica em data.iana.org/rdap/dns.json o mapa TLD → servidor RDAP."},
+    {"pergunta": "O registro TXT com 'v=spf1 include:spf.protection.outlook.com' indica que…", "opcoes": ["o domínio usa Microsoft 365 para enviar e-mail", "o site está hospedado na Microsoft", "o domínio foi registrado pela Microsoft", "o domínio está bloqueado"], "correta": 0, "explicacao": "O SPF lista quem pode enviar e-mail em nome do domínio; esse include é do Microsoft 365/Outlook."}
+  ],
+  "inovacao": {"titulo": "RDAP com bootstrap automático", "resumo": "O bootstrap da IANA diz qual servidor RDAP atende cada TLD. Desde jan/2025 o RDAP é o caminho oficial para gTLDs; no .br, RDAP e WHOIS seguem ativos."}
+}
