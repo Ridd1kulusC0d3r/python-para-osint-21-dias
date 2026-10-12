@@ -29,6 +29,11 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from comum import RAIZ, dias  # noqa: E402
 
+# O console do Windows pode não ser UTF-8: sem isto, imprimir "✅" derruba o próprio teste.
+for _fluxo in (sys.stdout, sys.stderr):
+    if hasattr(_fluxo, "reconfigure"):
+        _fluxo.reconfigure(encoding="utf-8", errors="replace")
+
 MARCA_OFFLINE = "⚠️ MODO OFFLINE"
 URL_CRU = "https://raw.githubusercontent.com/cipher387/python-for-OSINT-21-days/main/Day_{dia}/{arquivo}"
 

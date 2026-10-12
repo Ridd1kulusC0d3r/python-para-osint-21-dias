@@ -10,6 +10,11 @@ Só biblioteca padrão.
 import html
 import shutil
 
+import sys as _sys
+for _f in (_sys.stdout, _sys.stderr):
+    if hasattr(_f, "reconfigure"):
+        _f.reconfigure(encoding="utf-8", errors="replace")
+
 from comum import RAIZ, RANK_COR, URL_ORIGINAL, URL_REPO, dias
 
 DOCS = RAIZ / "docs"

@@ -12,6 +12,10 @@ on:
     - cron: "0 12 * * 1"   # 12:00 UTC = 09:00 em Brasília
   workflow_dispatch:
 
+env:
+  PYTHONUTF8: "1"
+  PYTHONIOENCODING: utf-8
+
 permissions:
   contents: read
   issues: write
@@ -25,8 +29,8 @@ jobs:
         os: [ubuntu-latest, windows-latest, macos-latest]
         python: ["3.9", "3.12"]
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: ${{ matrix.python }}
       - name: Exercícios BR e gabaritos (sem internet)
@@ -48,8 +52,8 @@ jobs:
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
       - name: Exercícios BR com internet + comparação com o original
@@ -59,7 +63,7 @@ jobs:
       - name: Resumo
         if: always()
         run: cat relatorio-ao-vivo.md >> "$GITHUB_STEP_SUMMARY"
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v5
         if: always()
         with:
           name: relatorio-ao-vivo
