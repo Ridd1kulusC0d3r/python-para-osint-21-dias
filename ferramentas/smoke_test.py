@@ -180,6 +180,10 @@ def main():
     print(f"\nFalhas: {len(falhas)} · APIs com problema: {len(apis)}")
     for f in falhas:
         print("❌", f)
+        if os.environ.get("GITHUB_ACTIONS"):
+            # Anotação visível na aba "Checks" do GitHub (sem precisar baixar o log)
+            resumo = f.replace("%", "%25").replace("\r", "").replace("\n", "%0A")[-1800:]
+            print(f"::error title=smoke_test::{resumo}")
     sys.exit(1 if falhas else 0)
 
 
