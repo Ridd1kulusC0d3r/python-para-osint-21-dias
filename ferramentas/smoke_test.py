@@ -183,6 +183,9 @@ def main():
     if args.relatorio:
         Path(args.relatorio).write_text(relatorio, encoding="utf-8")
     print(f"\nFalhas: {len(falhas)} · APIs com problema: {len(apis)}")
+    if os.environ.get("GITHUB_ACTIONS"):
+        for a in apis:
+            print(f"::warning title=API caiu no modo offline::{a}")
     for f in falhas:
         print("❌", f)
         if os.environ.get("GITHUB_ACTIONS"):
