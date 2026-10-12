@@ -9,6 +9,7 @@ dois CSVs prontos para o Excel em português, mais um relatório de qualidade
 
 import csv
 import difflib
+import gzip
 import json
 import os
 import unicodedata
@@ -25,6 +26,19 @@ SAIDAS = PASTA_DIA / "saidas"
 OFFLINE = os.environ.get("OSINT_OFFLINE") == "1"
 APELIDOS = {"bh": "Belo Horizonte", "jf": "Juiz de Fora", "gv": "Governador Valadares"}
 
+
+
+def ler_resposta(resposta):
+    """Lê a resposta HTTP e devolve o texto, descompactando se vier em gzip.
+
+    O IBGE responde COMPACTADO (gzip) mesmo quando não pedimos. O urllib não
+    descompacta sozinho, então olhamos os 2 primeiros bytes: 0x1f 0x8b é a
+    "assinatura" de todo arquivo gzip (os números mágicos que você vê no Dia 14).
+    """
+    dados = resposta.read()
+    if dados[:2] == b"\x1f\x8b" or resposta.headers.get("Content-Encoding") == "gzip":
+        dados = gzip.decompress(dados)
+    return dados.decode("utf-8")
 
 def normalizar(texto):
     sem_acento = unicodedata.normalize("NFKD", texto).encode("ascii", "ignore").decode("ascii")
@@ -43,7 +57,7 @@ def municipios_ibge():
             url = "https://servicodados.ibge.gov.br/api/v1/localidades/estados/MG/municipios"
             req = urllib.request.Request(url, headers={"User-Agent": "python-para-osint-21-dias/estudo"})
             with urllib.request.urlopen(req, timeout=30) as resposta:
-                lista = json.load(resposta)
+                lista = json.loads(ler_resposta(resposta))
         except Exception as erro:
             print(f"⚠️ MODO OFFLINE: a consulta falhou ({erro}). Usando a amostra local.")
     else:

@@ -18,6 +18,7 @@ Como rodar (dentro da pasta dia-07-csv):
 
 import csv
 import difflib              # compara textos parecidos ("Belo Horizone" ≈ "Belo Horizonte")
+import gzip
 import json
 import os
 import unicodedata          # separar letras de acentos
@@ -36,6 +37,19 @@ OFFLINE = os.environ.get("OSINT_OFFLINE") == "1"
 APELIDOS = {"bh": "Belo Horizonte", "beaga": "Belo Horizonte", "jf": "Juiz de Fora",
             "gv": "Governador Valadares", "udia": "Uberlândia"}
 
+
+
+def ler_resposta(resposta):
+    """Lê a resposta HTTP e devolve o texto, descompactando se vier em gzip.
+
+    O IBGE responde COMPACTADO (gzip) mesmo quando não pedimos. O urllib não
+    descompacta sozinho, então olhamos os 2 primeiros bytes: 0x1f 0x8b é a
+    "assinatura" de todo arquivo gzip (os números mágicos que você vê no Dia 14).
+    """
+    dados = resposta.read()
+    if dados[:2] == b"\x1f\x8b" or resposta.headers.get("Content-Encoding") == "gzip":
+        dados = gzip.decompress(dados)
+    return dados.decode("utf-8")
 
 def normalizar(texto):
     """'  Poços  de Caldas ' → 'pocos de caldas'."""
@@ -57,7 +71,7 @@ def carregar_municipios():
             url = "https://servicodados.ibge.gov.br/api/v1/localidades/estados/MG/municipios"
             pedido = urllib.request.Request(url, headers={"User-Agent": "python-para-osint-21-dias/estudo"})
             with urllib.request.urlopen(pedido, timeout=30) as resposta:
-                lista = json.load(resposta)
+                lista = json.loads(ler_resposta(resposta))
         except Exception as erro:
             print(f"⚠️ MODO OFFLINE: a consulta falhou ({erro}). Usando a amostra local.")
     else:

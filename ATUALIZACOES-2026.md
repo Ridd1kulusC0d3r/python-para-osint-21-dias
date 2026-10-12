@@ -40,3 +40,15 @@ Nada disso foi alterado no original. Está apontado nos comentários `# 💬`:
 Toda segunda-feira o [teste automático](.github/workflows/testes.yml) roda todos os exercícios ao vivo
 e confere se `original/` continua idêntico ao repositório do cipher387. Se algo mudar, ele abre uma issue.
 Você também pode abrir uma: [🔧 Um exercício quebrou](https://github.com/Ridd1kulusC0d3r/python-para-osint-21-dias/issues/new?template=api-quebrou.yml).
+
+## Status das APIs da camada Brasil (teste ao vivo de 12/10/2026)
+
+| Serviço | Resultado no teste automático | O que fizemos |
+|---|---|---|
+| registro.br (RDAP e WHOIS), DNS, BrasilAPI, ViaCEP, GitHub, ipify | ✅ responderam | — |
+| IBGE (Localidades) | Respondia **compactado em gzip** mesmo sem pedirmos, e o `urllib` não descompacta sozinho | Os scripts do [Dia 7](dia-07-csv/) agora detectam o gzip pelos "números mágicos" `1f 8b` e descompactam |
+| Querido Diário | Recusou a conexão TLS vinda dos servidores do GitHub (nos EUA) | Sem mudança: o exercício cai na amostra offline. Do Brasil, teste e conte numa issue |
+| Wayback Machine (CDX) | Recusou conexões vindas dos servidores do GitHub | Sem mudança: no Colab ou no seu computador costuma funcionar |
+| httpbin.org | Lento (tempo esgotado) | Sem mudança: serviço de teste, às vezes fica sobrecarregado |
+
+Quando uma API falha, o exercício **não quebra**: mostra `⚠️ MODO OFFLINE` e segue com a amostra de `dados/`.
