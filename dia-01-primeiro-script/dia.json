@@ -1,0 +1,73 @@
+{
+  "dia": 1,
+  "slug": "dia-01-primeiro-script",
+  "titulo": "O primeiro script",
+  "titulo_original": "Day 1. Run the first script",
+  "capitulo": "O primeiro alerta",
+  "pip_original": [],
+  "cartas": [
+    {
+      "numero": 1,
+      "nivel": 1,
+      "rank": "D",
+      "nome": "Jutsu do Primeiro Sinal",
+      "efeito": "Faz o Python falar pela primeira vez com um único print().",
+      "arquivo": "original/start.py"
+    },
+    {
+      "numero": 22,
+      "nivel": 2,
+      "rank": "B",
+      "nome": "Jutsu do Primeiro Alerta",
+      "efeito": "f-strings, emojis e a hora certa de Brasília: o briefing do caso na tela.",
+      "arquivo": "br/01_ola_nfa.py"
+    },
+    {
+      "numero": 43,
+      "nivel": 3,
+      "rank": "S",
+      "nome": "Boletim de Plantão",
+      "efeito": "Gera o boletim do turno com carimbo de hora, dias de golpe e R$ no formato brasileiro.",
+      "arquivo": "desafio.md"
+    }
+  ],
+  "quiz": [
+    {
+      "pergunta": "O que o código print(f\"Olá, {nome}!\") faz quando nome = \"Iara\"?",
+      "opcoes": [
+        "Mostra Olá, {nome}!",
+        "Mostra Olá, Iara!",
+        "Dá erro, porque falta o sinal de +",
+        "Pergunta o nome ao usuário"
+      ],
+      "correta": 1,
+      "explicacao": "O f antes das aspas faz o Python trocar {nome} pelo valor da variável."
+    },
+    {
+      "pergunta": "Por que o script usa ZoneInfo(\"America/Sao_Paulo\") em vez de só datetime.now()?",
+      "opcoes": [
+        "Porque datetime.now() não funciona no Brasil",
+        "Para o horário registrado ter fuso explícito e não depender da configuração do computador",
+        "Para o script rodar mais rápido",
+        "Porque o horário de verão ainda existe"
+      ],
+      "correta": 1,
+      "explicacao": "Um carimbo de tempo sem fuso é ambíguo. Com o fuso de Brasília, o registro vale em qualquer máquina (inclusive no Colab, que roda em UTC)."
+    },
+    {
+      "pergunta": "Qual destes formatos mostra 54877.4 como 54,877.40?",
+      "opcoes": [
+        "{valor:.2f}",
+        "{valor:,.2f}",
+        "{valor:.0%}",
+        "{valor:>5}"
+      ],
+      "correta": 1,
+      "explicacao": "A vírgula no formato liga o separador de milhar e .2f fixa duas casas decimais (padrão americano; para o brasileiro, troque os símbolos)."
+    }
+  ],
+  "inovacao": {
+    "titulo": "O novo terminal interativo do Python (3.13+)",
+    "resumo": "Desde o 3.13 o REPL tem edição de várias linhas, histórico e erros coloridos: ótimo para testar uma ideia antes de virar script."
+  }
+}

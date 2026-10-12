@@ -1,0 +1,15 @@
+{
+  "dia": 0,
+  "slug": "dia-00-preparacao",
+  "titulo": "Preparação do ambiente",
+  "titulo_original": "Day 0. Preparing for work",
+  "capitulo": "O recrutamento",
+  "pip_original": [],
+  "cartas": [],
+  "quiz": [
+    {"pergunta": "Qual é a forma mais rápida de começar o curso sem instalar nada no computador?", "opcoes": ["Instalar o Python pelo site oficial", "Abrir o notebook do dia no Google Colab", "Usar o Gitpod gratuito", "Compilar o Python a partir do código-fonte"], "correta": 1, "explicacao": "O Colab roda no navegador, inclusive no celular. O Gitpod usado pelo autor deixou de ser uma opção gratuita para isso."},
+    {"pergunta": "O que a variável de ambiente OSINT_OFFLINE=1 faz nos exercícios deste repositório?", "opcoes": ["Desliga a internet do computador", "Apaga a pasta saidas/", "Faz os scripts usarem as amostras locais de dados/ em vez de consultar a internet", "Ativa o modo anônimo do navegador"], "correta": 2, "explicacao": "Com OSINT_OFFLINE=1 os scripts pulam a consulta e leem a amostra em dados/, imprimindo '⚠️ MODO OFFLINE'."},
+    {"pergunta": "Por que os scripts do curso abrem arquivos sempre com encoding=\"utf-8\"?", "opcoes": ["Porque deixa o arquivo menor", "Porque no Windows o padrão costuma ser cp1252 e os acentos podem estragar", "Porque o Python não lê arquivos sem isso", "Porque é obrigatório pela LGPD"], "correta": 1, "explicacao": "Até o Python 3.14, o padrão do open() depende do sistema; no Windows em português costuma ser cp1252. Dizer utf-8 deixa tudo igual em qualquer máquina."}
+  ],
+  "inovacao": {"titulo": "Python 3.15: UTF-8 passa a ser o padrão", "resumo": "Lançado em 09/10/2026, o Python 3.15 ativa o modo UTF-8 por padrão (PEP 686). Mesmo assim, o curso mantém encoding=\"utf-8\" para rodar no 3.9+."}
+}

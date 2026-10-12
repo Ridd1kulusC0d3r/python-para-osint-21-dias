@@ -1,0 +1,19 @@
+{
+  "dia": 3,
+  "slug": "dia-03-ferramentas-de-linha-de-comando",
+  "titulo": "Ferramentas de linha de comando",
+  "titulo_original": "Day 3. Install and run Python command line tools",
+  "capitulo": "Ferramenta de campo",
+  "pip_original": [],
+  "cartas": [
+    {"numero": 3, "nivel": 1, "rank": "D", "nome": "Jutsu da Invocação", "efeito": "Invoca o blackbird de dentro do Python com subprocess e caça um username em centenas de sites.", "arquivo": "original/launch.py"},
+    {"numero": 24, "nivel": 2, "rank": "B", "nome": "Jutsu da Ferramenta de Campo", "efeito": "Cria a própria CLI com argparse, roda com subprocess e registra cada execução num log forense.", "arquivo": "br/01_cli_cep.py"},
+    {"numero": 45, "nivel": 3, "rank": "S", "nome": "Lote com Registro", "efeito": "Gera variantes de um apelido, simula ou executa a busca e grava CSV e log de tudo.", "arquivo": "desafio.md"}
+  ],
+  "quiz": [
+    {"pergunta": "Por que o br/02 passa o comando como lista ([sys.executable, 'br/01_cli_cep.py', '--cep', cep]) e sem shell=True?", "opcoes": ["Porque listas são mais rápidas", "Para que o texto digitado nunca seja interpretado pelo terminal como outro comando", "Porque subprocess.run não aceita texto", "Para esconder o comando do log"], "correta": 1, "explicacao": "Com shell=True, um valor como '30130010; rm -rf ~' viraria dois comandos. Em lista, cada item é só um argumento."},
+    {"pergunta": "No mini-blackbird, por que o GitLab precisa da checagem de texto além do status HTTP?", "opcoes": ["Porque o GitLab sempre responde 404", "Porque a API responde 200 mesmo quando o usuário não existe, devolvendo uma lista vazia []", "Porque o GitLab exige senha", "Porque o status HTTP do GitLab vem em texto"], "correta": 1, "explicacao": "A busca /api/v4/users?username= devolve 200 com [] quando não acha. Por isso a regra exige também o texto '\"id\"'."},
+    {"pergunta": "O mesmo username apareceu no GitHub e no Codeberg. O que você pode concluir?", "opcoes": ["Que é a mesma pessoa", "Que a pessoa é desenvolvedora", "Nada definitivo: é uma hipótese a confirmar com outros elementos", "Que o perfil é falso"], "correta": 2, "explicacao": "Usernames se repetem por coincidência. Confirme com foto, bio, links cruzados e datas antes de afirmar qualquer vínculo."}
+  ],
+  "inovacao": {"titulo": "Blackbird + WhatsMyName", "resumo": "O blackbird de 2026 usa a base comunitária WhatsMyName (mais de 700 sites), exporta CSV/PDF/JSON e o -u do curso original ainda funciona."}
+}

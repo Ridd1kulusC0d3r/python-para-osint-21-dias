@@ -1,0 +1,73 @@
+{
+  "dia": 2,
+  "slug": "dia-02-sintaxe-basica",
+  "titulo": "Sintaxe básica: variáveis, condições, listas e laços",
+  "titulo_original": "Day 2. Minimum Basic Syntax",
+  "capitulo": "Triagem",
+  "pip_original": [],
+  "cartas": [
+    {
+      "numero": 2,
+      "nivel": 1,
+      "rank": "D",
+      "nome": "Jutsu dos Quatro Pilares",
+      "efeito": "Variável, condição, lista e laço: a base de todo script de OSINT.",
+      "arquivo": "original/variable.py"
+    },
+    {
+      "numero": 23,
+      "nivel": 2,
+      "rank": "B",
+      "nome": "Jutsu da Triagem",
+      "efeito": "Valida CPF e CNPJ (inclusive o alfanumérico de 2026) e separa denúncias para conferir.",
+      "arquivo": "br/02_valida_cpf.py"
+    },
+    {
+      "numero": 44,
+      "nivel": 3,
+      "rank": "S",
+      "nome": "Classificador de Documentos",
+      "efeito": "Olha uma lista misturada e diz o que é CPF, CNPJ ou telefone, e se a conta fecha.",
+      "arquivo": "desafio.md"
+    }
+  ],
+  "quiz": [
+    {
+      "pergunta": "No original list.py, por que girls[3] mostra \"Brenda\"?",
+      "opcoes": [
+        "Porque Brenda é o terceiro nome",
+        "Porque a contagem dos índices começa em 0, então [3] é o quarto item",
+        "Porque append() sempre coloca o item na posição 3",
+        "Porque a lista é ordenada em ordem alfabética"
+      ],
+      "correta": 1,
+      "explicacao": "Índices começam em zero: [0] Anna, [1] Maria, [2] Eva, [3] Brenda."
+    },
+    {
+      "pergunta": "Um CPF passou na conta dos dígitos verificadores. O que isso prova?",
+      "opcoes": [
+        "Que a pessoa existe",
+        "Que o CPF está regular na Receita",
+        "Só que o número é matematicamente coerente; pode não existir ou ser de outra pessoa",
+        "Que a vítima disse a verdade"
+      ],
+      "correta": 2,
+      "explicacao": "A validação só confere a conta. Existência e titularidade dependem da Receita Federal."
+    },
+    {
+      "pergunta": "No CNPJ alfanumérico, qual é o valor da letra A na conta do dígito verificador?",
+      "opcoes": [
+        "1",
+        "10",
+        "17",
+        "65"
+      ],
+      "correta": 2,
+      "explicacao": "Valor = ord(caractere) − 48. O código de 'A' é 65, então vale 17. Para os algarismos, a mesma fórmula dá o próprio número."
+    }
+  ],
+  "inovacao": {
+    "titulo": "CNPJ alfanumérico em vigor",
+    "resumo": "Desde jul/2026 a Receita emite CNPJs com letras; o 1º foi 00.000.000/E08G-12 (filial do BB, 31/07/2026). A conta do DV é a mesma, com ord(c) − 48."
+  }
+}

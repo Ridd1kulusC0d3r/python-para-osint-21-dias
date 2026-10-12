@@ -1,0 +1,13 @@
+{
+  "_aviso": "AMOSTRA ilustrativa no formato da resposta da BrasilAPI (/api/cep/v2). Não foi baixada ao vivo (logradouro conferido em base pública de CEPs): rode o script com internet para ver a resposta real.",
+  "cep": "30130010",
+  "state": "MG",
+  "city": "Belo Horizonte",
+  "neighborhood": "Centro",
+  "street": "Praça Sete de Setembro",
+  "service": "open-cep",
+  "location": {
+    "type": "Point",
+    "coordinates": {}
+  }
+}

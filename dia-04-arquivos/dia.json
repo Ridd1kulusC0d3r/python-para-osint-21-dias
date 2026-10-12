@@ -1,0 +1,73 @@
+{
+  "dia": 4,
+  "slug": "dia-04-arquivos",
+  "titulo": "Ler e escrever arquivos",
+  "titulo_original": "Day 4. Reading and writing files",
+  "capitulo": "Os depoimentos",
+  "pip_original": [],
+  "cartas": [
+    {
+      "numero": 4,
+      "nivel": 1,
+      "rank": "D",
+      "nome": "Jutsu do Pergaminho",
+      "efeito": "Lê e escreve arquivos de texto com open(), read(), readlines() e write().",
+      "arquivo": "original/read_file.py"
+    },
+    {
+      "numero": 25,
+      "nivel": 2,
+      "rank": "B",
+      "nome": "Jutsu dos Depoimentos",
+      "efeito": "Lê depoimentos em UTF-8, anota com carimbo de hora e extrai vítima, contato e chave PIX.",
+      "arquivo": "br/01_ler_depoimentos.py"
+    },
+    {
+      "numero": 46,
+      "nivel": 3,
+      "rank": "S",
+      "nome": "Fichas e Vínculos",
+      "efeito": "Gera uma ficha padronizada por depoimento e aponta números e chaves PIX repetidos.",
+      "arquivo": "desafio.md"
+    }
+  ],
+  "quiz": [
+    {
+      "pergunta": "Você quer registrar notas de investigação sem nunca apagar as anteriores. Qual modo de open() usar?",
+      "opcoes": [
+        "\"r\"",
+        "\"w\"",
+        "\"a\"",
+        "\"x\""
+      ],
+      "correta": 2,
+      "explicacao": "\"a\" (append) acrescenta no fim. \"w\" apaga o conteúdo anterior, \"r\" só lê e \"x\" só cria um arquivo novo."
+    },
+    {
+      "pergunta": "Um arquivo gravado em UTF-8 é aberto no Windows com open(\"arquivo.txt\") (sem encoding). O que pode acontecer?",
+      "opcoes": [
+        "Nada, o Python sempre usa UTF-8",
+        "Os acentos viram coisas como \"DivinÃ³polis\", porque o padrão pode ser cp1252",
+        "O arquivo é apagado",
+        "O Python converte o arquivo para PDF"
+      ],
+      "correta": 1,
+      "explicacao": "Até o Python 3.14, o padrão do open() depende do sistema; no Windows em português costuma ser cp1252. Sempre informe encoding=\"utf-8\"."
+    },
+    {
+      "pergunta": "Qual a vantagem de abrir arquivos com \"with open(...) as f:\"?",
+      "opcoes": [
+        "O arquivo fica mais rápido",
+        "O arquivo é fechado automaticamente no fim do bloco, mesmo se der erro",
+        "Permite abrir arquivos sem extensão",
+        "Criptografa o conteúdo"
+      ],
+      "correta": 1,
+      "explicacao": "O with garante o fechamento do arquivo (e a gravação no disco), mesmo que aconteça uma exceção no meio."
+    }
+  ],
+  "inovacao": {
+    "titulo": "Path.copy() com metadados (Python 3.14)",
+    "resumo": "Desde o 3.14, Path.copy(destino, preserve_metadata=True) copia um arquivo mantendo a data de modificação: útil para duplicar evidências sem perder a cronologia."
+  }
+}

@@ -1,0 +1,3 @@
+username: cipher387 | github.com | found
+username: cipher387 | gitlab.com | not found
+username: cipher387 | codeberg.org | not found

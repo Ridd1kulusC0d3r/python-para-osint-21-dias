@@ -1,0 +1,15 @@
+{
+  "_aviso": "AMOSTRA ilustrativa: respostas SIMULADAS no formato real de cada API, para estudar sem internet. Só o resultado do GitHub reflete um fato conhecido (o perfil público github.com/cipher387, autor do curso). Os de GitLab e Codeberg são exemplos de 'não encontrado' e não foram verificados.",
+  "GitHub": {
+    "status": 200,
+    "corpo": {"login": "cipher387", "html_url": "https://github.com/cipher387", "type": "User"}
+  },
+  "GitLab": {
+    "status": 200,
+    "corpo": []
+  },
+  "Codeberg": {
+    "status": 404,
+    "corpo": {"message": "user redirect does not exist [name: cipher387]", "url": "https://codeberg.org/api/swagger"}
+  }
+}
